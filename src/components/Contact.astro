@@ -1,0 +1,108 @@
+---
+---
+
+<section class="contact section">
+  <div class="container contact-grid">
+    <div class="contact-intro">
+      <h1>Contact</h1>
+      <p>
+        Wil je contact met de redactie van Nerdplaza.nl of zou je een samenwerking met ons aan willen gaan?
+      </p>
+      <p>
+        Neem dan contact op middels onderstaand contact formulier. We streven er naar alle vragen binnen 24 uur te
+        beantwoorden.
+      </p>
+    </div>
+
+    <form class="contact-form" method="post" action="#" aria-label="Contactformulier">
+      <div class="form-group">
+        <label for="name">Naam</label>
+        <input type="text" id="name" name="name" required autocomplete="name" />
+      </div>
+      <div class="form-group">
+        <label for="email">E-mailadres</label>
+        <input type="email" id="email" name="email" required autocomplete="email" />
+      </div>
+      <div class="form-group">
+        <label for="subject">Onderwerp</label>
+        <input type="text" id="subject" name="subject" required />
+      </div>
+      <div class="form-group">
+        <label for="message">Bericht</label>
+        <textarea id="message" name="message" rows="6" required></textarea>
+      </div>
+      <button type="submit" class="btn">Verstuur bericht</button>
+    </form>
+  </div>
+</section>
+
+<style>
+  .contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: clamp(2rem, 5vw, 4rem);
+    align-items: start;
+  }
+
+  .contact-intro {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+
+  .contact-intro p {
+    color: var(--color-text-muted);
+    max-width: 32rem;
+  }
+
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    padding: clamp(1.5rem, 3vw, 2rem);
+    background: var(--color-bg-elevated);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+  }
+
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .form-group label {
+    font-size: 0.875rem;
+    font-weight: 600;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    padding: 0.75rem 1rem;
+    font-family: var(--font-primary);
+    font-size: 1rem;
+    color: var(--color-text);
+    background: var(--color-bg);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-sm);
+    transition: border-color var(--transition), box-shadow var(--transition);
+  }
+
+  .form-group input:focus,
+  .form-group textarea:focus {
+    outline: none;
+    border-color: var(--color-accent);
+    box-shadow: 0 0 0 3px rgba(214, 82, 248, 0.15);
+  }
+
+  .form-group textarea {
+    resize: vertical;
+    min-height: 140px;
+  }
+
+  @media (max-width: 767px) {
+    .contact-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

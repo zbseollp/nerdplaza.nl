@@ -1,0 +1,40 @@
+---
+import '../styles/global.css';
+
+interface Props {
+  title: string;
+  description?: string;
+  canonical?: string;
+}
+
+const {
+  title,
+  description = 'Ben jij een echte game freak? Of ben je net begonnen maar erg enthousiast? Neem dan snel een kijkje! Alles over en voor gamen vind je hier!',
+  canonical,
+} = Astro.props;
+
+const fullTitle = title.includes('Nerd Plaza') ? title : `${title} | Nerd Plaza`;
+const canonicalUrl = canonical ?? new URL(Astro.url.pathname, Astro.site).href;
+---
+
+<!doctype html>
+<html lang="nl-NL">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonicalUrl} />
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/brand/favicon-32.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="/images/brand/favicon-192.png" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{fullTitle}</title>
+  </head>
+  <body>
+    <a class="skip-link" href="#content">Ga naar de inhoud</a>
+    <slot name="header" />
+    <main id="content">
+      <slot />
+    </main>
+    <slot name="footer" />
+  </body>
+</html>

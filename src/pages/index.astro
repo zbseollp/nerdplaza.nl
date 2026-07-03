@@ -1,0 +1,59 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Hero from '../components/Hero.astro';
+import Features from '../components/Features.astro';
+import Services from '../components/Services.astro';
+import CTA from '../components/CTA.astro';
+import BlogPosts from '../components/BlogPosts.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<BaseLayout title="Nerd Plaza | Het echte gamers paradijs">
+  <Header slot="header" currentPath={Astro.url.pathname} />
+
+  <Hero />
+  <Features />
+  <Services />
+
+  <CTA
+    reversed
+    overlay
+    title="Maak kennis met online gamen en speel tegen mensen over de wereld"
+    description="Tegenwoordig kun je met mensen gamen vanuit de hele wereld. Het enige wat je eigenlijk nodig hebt is een stabiele internetverbinding. Ben jij klaar om de uitdaging aan te gaan?"
+    imageSrc="/images/brand/online-gaming.svg"
+    imageAlt="Online gamen illustratie"
+  />
+
+  <BlogPosts limit={8} />
+
+  <CTA
+    title="Maak kennis met Virtual Reality"
+    description="Door Virtual Reality kun je je tegenwoordig ook echt in je online game wereld bevinden. Neem snel een kijkje om erachter te komen of dit iets voor jou is."
+    imageSrc="/images/brand/virtual-reality.svg"
+    imageAlt="Virtual Reality gaming illustratie"
+  />
+
+  <section class="see-also section">
+    <div class="container">
+      <h2 class="section-heading">Zie ook</h2>
+      <p>
+        <a href="https://volgers-likes.nl/tiktok-likes-kopen/" target="_blank" rel="noopener" class="link-accent">
+          Boost je TikTok met extra likes
+        </a>
+      </p>
+    </div>
+  </section>
+
+  <Footer slot="footer" />
+</BaseLayout>
+
+<style>
+  .see-also {
+    padding-top: 0;
+  }
+
+  .see-also p {
+    margin-top: 0.75rem;
+  }
+</style>

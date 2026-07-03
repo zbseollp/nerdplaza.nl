@@ -1,0 +1,113 @@
+---
+interface Props {
+  title: string;
+  description: string;
+  imageSrc: string;
+  imageAlt?: string;
+  reversed?: boolean;
+  overlay?: boolean;
+}
+
+const {
+  title,
+  description,
+  imageSrc,
+  imageAlt = '',
+  reversed = false,
+  overlay = false,
+} = Astro.props;
+---
+
+<section class:list={['cta section', reversed && 'cta--reversed', overlay && 'cta--overlay']}>
+  <div class="container cta-grid">
+    {
+      reversed ? (
+        <>
+          <div class="cta-visual">
+            <img src={imageSrc} alt={imageAlt} loading="lazy" decoding="async" />
+          </div>
+          <div class="cta-content">
+            <h2>{title}</h2>
+            <p>{description}</p>
+          </div>
+        </>
+      ) : (
+        <>
+          <div class="cta-content">
+            <h2>{title}</h2>
+            <p>{description}</p>
+          </div>
+          <div class="cta-visual">
+            <img src={imageSrc} alt={imageAlt} loading="lazy" decoding="async" />
+          </div>
+        </>
+      )
+    }
+  </div>
+</section>
+
+<style>
+  .cta {
+    background: var(--color-bg);
+  }
+
+  .cta--overlay {
+    position: relative;
+    margin-top: -10rem;
+    padding-top: calc(var(--section-padding) + 10rem);
+    background: linear-gradient(to bottom, rgba(93, 97, 105, 0.2) 0%, var(--color-bg) 40%);
+  }
+
+  .cta-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: clamp(2rem, 5vw, 4rem);
+  }
+
+  .cta-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+
+  .cta-content p {
+    color: var(--color-text-muted);
+    max-width: 34rem;
+  }
+
+  .cta-visual {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .cta-visual img {
+    width: min(100%, 500px);
+    filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.2));
+  }
+
+  .cta--reversed .cta-visual img {
+    width: min(100%, 446px);
+  }
+
+  @media (max-width: 767px) {
+    .cta--overlay {
+      margin-top: -6rem;
+      padding-top: calc(var(--section-padding) + 6rem);
+    }
+
+    .cta-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .cta--reversed .cta-grid {
+      display: flex;
+      flex-direction: column-reverse;
+    }
+
+    .cta-visual img {
+      width: min(70%, 320px);
+    }
+  }
+</style>

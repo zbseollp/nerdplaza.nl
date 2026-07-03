@@ -1,0 +1,3335 @@
+{
+  "scrapedAt": "2026-06-30T09:35:33.337Z",
+  "total": 665,
+  "success": 665,
+  "failed": 0,
+  "skipped": 0,
+  "pages": [
+    {
+      "slug": "sitemap",
+      "pageType": "page",
+      "bodyLength": 62517
+    },
+    {
+      "slug": "kantoorartikelen",
+      "pageType": "category",
+      "bodyLength": 12129
+    },
+    {
+      "slug": "wearables",
+      "pageType": "category",
+      "bodyLength": 3908
+    },
+    {
+      "slug": "gamen",
+      "pageType": "category",
+      "bodyLength": 6034
+    },
+    {
+      "slug": "muziek",
+      "pageType": "category",
+      "bodyLength": 4505
+    },
+    {
+      "slug": "televisies",
+      "pageType": "category",
+      "bodyLength": 2061
+    },
+    {
+      "slug": "drones",
+      "pageType": "category",
+      "bodyLength": 2252
+    },
+    {
+      "slug": "vermogen",
+      "pageType": "category",
+      "bodyLength": 17467
+    },
+    {
+      "slug": "vermogen-van-zb_mp_naam",
+      "pageType": "review",
+      "bodyLength": 4218
+    },
+    {
+      "slug": "streamen",
+      "pageType": "category",
+      "bodyLength": 6284
+    },
+    {
+      "slug": "zb_mp_titel-streamen",
+      "pageType": "stream",
+      "bodyLength": 32739
+    },
+    {
+      "slug": "zb_mp_product-gamingpclaptop",
+      "pageType": "page",
+      "bodyLength": 1534
+    },
+    {
+      "slug": "links",
+      "pageType": "page",
+      "bodyLength": 2081
+    },
+    {
+      "slug": "zb_mp_mv",
+      "pageType": "page",
+      "bodyLength": 44719
+    },
+    {
+      "slug": "beste-32-inch-tv",
+      "pageType": "review",
+      "bodyLength": 51729
+    },
+    {
+      "slug": "beste-3d-pen",
+      "pageType": "review",
+      "bodyLength": 54590
+    },
+    {
+      "slug": "beste-3d-printer",
+      "pageType": "review",
+      "bodyLength": 52137
+    },
+    {
+      "slug": "beste-40-inch-tv",
+      "pageType": "review",
+      "bodyLength": 53147
+    },
+    {
+      "slug": "beste-49-inch-tv",
+      "pageType": "review",
+      "bodyLength": 52391
+    },
+    {
+      "slug": "beste-4k-tv",
+      "pageType": "review",
+      "bodyLength": 53260
+    },
+    {
+      "slug": "beste-50-inch-tv",
+      "pageType": "review",
+      "bodyLength": 50649
+    },
+    {
+      "slug": "beste-55-inch-tv",
+      "pageType": "review",
+      "bodyLength": 51092
+    },
+    {
+      "slug": "beste-ai-software",
+      "pageType": "review",
+      "bodyLength": 54466
+    },
+    {
+      "slug": "beste-android-telefoon",
+      "pageType": "review",
+      "bodyLength": 54831
+    },
+    {
+      "slug": "beste-beamer",
+      "pageType": "review",
+      "bodyLength": 55333
+    },
+    {
+      "slug": "beste-beamer-voor-thuis",
+      "pageType": "review",
+      "bodyLength": 52746
+    },
+    {
+      "slug": "beste-bluetooth-oordopjes",
+      "pageType": "review",
+      "bodyLength": 55164
+    },
+    {
+      "slug": "beste-bluetooth-platenspeler",
+      "pageType": "review",
+      "bodyLength": 52020
+    },
+    {
+      "slug": "beste-bluetooth-receiver",
+      "pageType": "review",
+      "bodyLength": 54799
+    },
+    {
+      "slug": "beste-bluetooth-speaker",
+      "pageType": "review",
+      "bodyLength": 51072
+    },
+    {
+      "slug": "beste-boeken",
+      "pageType": "review",
+      "bodyLength": 52936
+    },
+    {
+      "slug": "beste-boekenplank-speakers",
+      "pageType": "review",
+      "bodyLength": 51692
+    },
+    {
+      "slug": "beste-boekhoudprogramma",
+      "pageType": "review",
+      "bodyLength": 54698
+    },
+    {
+      "slug": "beste-bureau",
+      "pageType": "review",
+      "bodyLength": 54028
+    },
+    {
+      "slug": "beste-bureaulamp",
+      "pageType": "review",
+      "bodyLength": 54443
+    },
+    {
+      "slug": "beste-bureaustoel",
+      "pageType": "review",
+      "bodyLength": 54550
+    },
+    {
+      "slug": "beste-business-intelligence",
+      "pageType": "review",
+      "bodyLength": 55147
+    },
+    {
+      "slug": "beste-cad",
+      "pageType": "review",
+      "bodyLength": 55126
+    },
+    {
+      "slug": "beste-camcorder",
+      "pageType": "review",
+      "bodyLength": 54210
+    },
+    {
+      "slug": "beste-camera-accessoires",
+      "pageType": "review",
+      "bodyLength": 51994
+    },
+    {
+      "slug": "beste-cassetterecorder",
+      "pageType": "review",
+      "bodyLength": 53285
+    },
+    {
+      "slug": "beste-chromebook",
+      "pageType": "review",
+      "bodyLength": 53661
+    },
+    {
+      "slug": "beste-cloudopslag",
+      "pageType": "review",
+      "bodyLength": 54288
+    },
+    {
+      "slug": "beste-compact-camera",
+      "pageType": "review",
+      "bodyLength": 55225
+    },
+    {
+      "slug": "beste-computermuis",
+      "pageType": "review",
+      "bodyLength": 53617
+    },
+    {
+      "slug": "beste-content-management",
+      "pageType": "review",
+      "bodyLength": 54981
+    },
+    {
+      "slug": "beste-dab-antenne",
+      "pageType": "review",
+      "bodyLength": 51241
+    },
+    {
+      "slug": "beste-dashcam",
+      "pageType": "review",
+      "bodyLength": 54509
+    },
+    {
+      "slug": "beste-deepfake",
+      "pageType": "review",
+      "bodyLength": 52245
+    },
+    {
+      "slug": "beste-design-software",
+      "pageType": "review",
+      "bodyLength": 55763
+    },
+    {
+      "slug": "beste-desktop",
+      "pageType": "review",
+      "bodyLength": 54252
+    },
+    {
+      "slug": "beste-digitale-camera",
+      "pageType": "review",
+      "bodyLength": 51066
+    },
+    {
+      "slug": "beste-docking-station",
+      "pageType": "review",
+      "bodyLength": 54755
+    },
+    {
+      "slug": "beste-draadloze-koptelefoon",
+      "pageType": "review",
+      "bodyLength": 53749
+    },
+    {
+      "slug": "beste-draadloze-muis",
+      "pageType": "review",
+      "bodyLength": 53414
+    },
+    {
+      "slug": "beste-draadloze-oordopjes",
+      "pageType": "review",
+      "bodyLength": 54779
+    },
+    {
+      "slug": "beste-draadloze-oortjes",
+      "pageType": "review",
+      "bodyLength": 55466
+    },
+    {
+      "slug": "beste-draadloze-speaker",
+      "pageType": "review",
+      "bodyLength": 51830
+    },
+    {
+      "slug": "beste-draadloze-toetsenbord",
+      "pageType": "review",
+      "bodyLength": 51000
+    },
+    {
+      "slug": "beste-draagbare-speaker",
+      "pageType": "review",
+      "bodyLength": 52716
+    },
+    {
+      "slug": "beste-drinkbeker-school",
+      "pageType": "review",
+      "bodyLength": 54722
+    },
+    {
+      "slug": "beste-drinkfles",
+      "pageType": "review",
+      "bodyLength": 54741
+    },
+    {
+      "slug": "beste-drone",
+      "pageType": "review",
+      "bodyLength": 54319
+    },
+    {
+      "slug": "beste-drone-camera",
+      "pageType": "review",
+      "bodyLength": 54157
+    },
+    {
+      "slug": "beste-drone-met-camera",
+      "pageType": "review",
+      "bodyLength": 51519
+    },
+    {
+      "slug": "beste-drone-voor-beginners",
+      "pageType": "review",
+      "bodyLength": 52180
+    },
+    {
+      "slug": "beste-e-reader",
+      "pageType": "review",
+      "bodyLength": 53210
+    },
+    {
+      "slug": "beste-earbuds",
+      "pageType": "review",
+      "bodyLength": 54862
+    },
+    {
+      "slug": "beste-educatief-speelgoed",
+      "pageType": "review",
+      "bodyLength": 54324
+    },
+    {
+      "slug": "beste-erp",
+      "pageType": "review",
+      "bodyLength": 55158
+    },
+    {
+      "slug": "beste-externe-dvd-brander",
+      "pageType": "review",
+      "bodyLength": 54815
+    },
+    {
+      "slug": "beste-externe-geluidskaart",
+      "pageType": "review",
+      "bodyLength": 54880
+    },
+    {
+      "slug": "beste-externe-harde-schijf",
+      "pageType": "review",
+      "bodyLength": 54397
+    },
+    {
+      "slug": "beste-fietscomputer",
+      "pageType": "review",
+      "bodyLength": 53787
+    },
+    {
+      "slug": "beste-fietsslot",
+      "pageType": "review",
+      "bodyLength": 53131
+    },
+    {
+      "slug": "beste-fietsspiegel",
+      "pageType": "review",
+      "bodyLength": 53751
+    },
+    {
+      "slug": "beste-fietsverlichting",
+      "pageType": "review",
+      "bodyLength": 53338
+    },
+    {
+      "slug": "beste-flowchart",
+      "pageType": "review",
+      "bodyLength": 51995
+    },
+    {
+      "slug": "beste-fm-transmitter",
+      "pageType": "review",
+      "bodyLength": 51424
+    },
+    {
+      "slug": "beste-fotocamera",
+      "pageType": "review",
+      "bodyLength": 52394
+    },
+    {
+      "slug": "beste-fotoprinter",
+      "pageType": "review",
+      "bodyLength": 51743
+    },
+    {
+      "slug": "beste-game-bureau",
+      "pageType": "review",
+      "bodyLength": 52338
+    },
+    {
+      "slug": "beste-game-pc",
+      "pageType": "review",
+      "bodyLength": 54542
+    },
+    {
+      "slug": "beste-gameboy",
+      "pageType": "review",
+      "bodyLength": 51867
+    },
+    {
+      "slug": "beste-gamestoel",
+      "pageType": "review",
+      "bodyLength": 52652
+    },
+    {
+      "slug": "beste-gaming-computer",
+      "pageType": "review",
+      "bodyLength": 53675
+    },
+    {
+      "slug": "beste-gaming-headset",
+      "pageType": "review",
+      "bodyLength": 52165
+    },
+    {
+      "slug": "beste-gaming-headset-ps4",
+      "pageType": "review",
+      "bodyLength": 52232
+    },
+    {
+      "slug": "beste-gaming-laptop",
+      "pageType": "review",
+      "bodyLength": 51913
+    },
+    {
+      "slug": "beste-gaming-monitor",
+      "pageType": "review",
+      "bodyLength": 52572
+    },
+    {
+      "slug": "beste-gaming-muis",
+      "pageType": "review",
+      "bodyLength": 54145
+    },
+    {
+      "slug": "beste-gaming-router",
+      "pageType": "review",
+      "bodyLength": 51435
+    },
+    {
+      "slug": "beste-gaming-toetsenbord",
+      "pageType": "review",
+      "bodyLength": 51983
+    },
+    {
+      "slug": "beste-grafische-rekenmachine",
+      "pageType": "review",
+      "bodyLength": 54757
+    },
+    {
+      "slug": "beste-hdmi-monitor",
+      "pageType": "review",
+      "bodyLength": 51736
+    },
+    {
+      "slug": "beste-hdmi-splitter",
+      "pageType": "review",
+      "bodyLength": 54032
+    },
+    {
+      "slug": "beste-hifi-set",
+      "pageType": "review",
+      "bodyLength": 53598
+    },
+    {
+      "slug": "beste-home-cinema-set",
+      "pageType": "review",
+      "bodyLength": 53501
+    },
+    {
+      "slug": "beste-hoofdlamp",
+      "pageType": "review",
+      "bodyLength": 54912
+    },
+    {
+      "slug": "beste-hosting",
+      "pageType": "review",
+      "bodyLength": 54023
+    },
+    {
+      "slug": "beste-ipad",
+      "pageType": "review",
+      "bodyLength": 51173
+    },
+    {
+      "slug": "beste-iphone",
+      "pageType": "review",
+      "bodyLength": 49256
+    },
+    {
+      "slug": "beste-iphone-kabel",
+      "pageType": "review",
+      "bodyLength": 54225
+    },
+    {
+      "slug": "beste-jbl-charge",
+      "pageType": "review",
+      "bodyLength": 51106
+    },
+    {
+      "slug": "beste-jbl-speaker",
+      "pageType": "review",
+      "bodyLength": 52070
+    },
+    {
+      "slug": "beste-kabel-organizer-tas",
+      "pageType": "review",
+      "bodyLength": 55263
+    },
+    {
+      "slug": "beste-karaoke-microfoon",
+      "pageType": "review",
+      "bodyLength": 52031
+    },
+    {
+      "slug": "beste-kinder-drone",
+      "pageType": "review",
+      "bodyLength": 51710
+    },
+    {
+      "slug": "beste-kleurpotloden",
+      "pageType": "review",
+      "bodyLength": 53583
+    },
+    {
+      "slug": "beste-koffiebeker-to-go",
+      "pageType": "review",
+      "bodyLength": 53350
+    },
+    {
+      "slug": "beste-kompas",
+      "pageType": "review",
+      "bodyLength": 53822
+    },
+    {
+      "slug": "beste-koptelefoon",
+      "pageType": "review",
+      "bodyLength": 54517
+    },
+    {
+      "slug": "beste-label-printer",
+      "pageType": "review",
+      "bodyLength": 52511
+    },
+    {
+      "slug": "beste-laptop",
+      "pageType": "review",
+      "bodyLength": 53447
+    },
+    {
+      "slug": "beste-laptop-fotobewerking",
+      "pageType": "review",
+      "bodyLength": 51226
+    },
+    {
+      "slug": "beste-laptop-met-touchscreen",
+      "pageType": "review",
+      "bodyLength": 52187
+    },
+    {
+      "slug": "beste-laptop-rugzak",
+      "pageType": "review",
+      "bodyLength": 54885
+    },
+    {
+      "slug": "beste-laptop-standaard",
+      "pageType": "review",
+      "bodyLength": 54615
+    },
+    {
+      "slug": "beste-laptop-voor-studenten",
+      "pageType": "review",
+      "bodyLength": 54794
+    },
+    {
+      "slug": "beste-laptophoes",
+      "pageType": "review",
+      "bodyLength": 54340
+    },
+    {
+      "slug": "beste-laptopmuis",
+      "pageType": "review",
+      "bodyLength": 53881
+    },
+    {
+      "slug": "beste-laptoptas",
+      "pageType": "review",
+      "bodyLength": 54265
+    },
+    {
+      "slug": "beste-laserprinter",
+      "pageType": "review",
+      "bodyLength": 53207
+    },
+    {
+      "slug": "beste-lcd-scherm",
+      "pageType": "review",
+      "bodyLength": 54905
+    },
+    {
+      "slug": "beste-lonely-planet",
+      "pageType": "review",
+      "bodyLength": 53656
+    },
+    {
+      "slug": "beste-macbook",
+      "pageType": "review",
+      "bodyLength": 51941
+    },
+    {
+      "slug": "beste-marketing-software",
+      "pageType": "review",
+      "bodyLength": 54655
+    },
+    {
+      "slug": "beste-mechanische-toetsenbord",
+      "pageType": "review",
+      "bodyLength": 52009
+    },
+    {
+      "slug": "beste-mesh-wifi-router",
+      "pageType": "review",
+      "bodyLength": 54407
+    },
+    {
+      "slug": "beste-mini-beamer",
+      "pageType": "review",
+      "bodyLength": 55038
+    },
+    {
+      "slug": "beste-mini-drone",
+      "pageType": "review",
+      "bodyLength": 51915
+    },
+    {
+      "slug": "beste-mini-drone-met-camera",
+      "pageType": "review",
+      "bodyLength": 52571
+    },
+    {
+      "slug": "beste-mini-laptop",
+      "pageType": "review",
+      "bodyLength": 55116
+    },
+    {
+      "slug": "beste-mini-pc",
+      "pageType": "review",
+      "bodyLength": 55074
+    },
+    {
+      "slug": "beste-moederbord",
+      "pageType": "review",
+      "bodyLength": 51571
+    },
+    {
+      "slug": "beste-monitor",
+      "pageType": "review",
+      "bodyLength": 53498
+    },
+    {
+      "slug": "beste-monokijker",
+      "pageType": "review",
+      "bodyLength": 55105
+    },
+    {
+      "slug": "beste-mp3-speler",
+      "pageType": "review",
+      "bodyLength": 54190
+    },
+    {
+      "slug": "beste-nachtkijker",
+      "pageType": "review",
+      "bodyLength": 54801
+    },
+    {
+      "slug": "beste-nas",
+      "pageType": "review",
+      "bodyLength": 53754
+    },
+    {
+      "slug": "beste-nintendo-switch",
+      "pageType": "review",
+      "bodyLength": 51885
+    },
+    {
+      "slug": "beste-noise-cancelling-koptelefoon",
+      "pageType": "review",
+      "bodyLength": 52651
+    },
+    {
+      "slug": "beste-noise-cancelling-oordopjes",
+      "pageType": "review",
+      "bodyLength": 55688
+    },
+    {
+      "slug": "beste-notitieboek",
+      "pageType": "review",
+      "bodyLength": 54022
+    },
+    {
+      "slug": "beste-office-software",
+      "pageType": "review",
+      "bodyLength": 54391
+    },
+    {
+      "slug": "beste-oled-tv",
+      "pageType": "review",
+      "bodyLength": 53560
+    },
+    {
+      "slug": "beste-onderwater-drone",
+      "pageType": "review",
+      "bodyLength": 52554
+    },
+    {
+      "slug": "beste-party-speaker",
+      "pageType": "review",
+      "bodyLength": 51178
+    },
+    {
+      "slug": "beste-paspoort-hoesje",
+      "pageType": "review",
+      "bodyLength": 54143
+    },
+    {
+      "slug": "beste-password-manager",
+      "pageType": "review",
+      "bodyLength": 49689
+    },
+    {
+      "slug": "beste-pc-cleaner",
+      "pageType": "review",
+      "bodyLength": 54464
+    },
+    {
+      "slug": "beste-pc-speaker",
+      "pageType": "review",
+      "bodyLength": 51420
+    },
+    {
+      "slug": "beste-pc-speakers",
+      "pageType": "review",
+      "bodyLength": 50497
+    },
+    {
+      "slug": "beste-personeelsplanning-software",
+      "pageType": "review",
+      "bodyLength": 55949
+    },
+    {
+      "slug": "beste-planbord",
+      "pageType": "review",
+      "bodyLength": 54884
+    },
+    {
+      "slug": "beste-planning-software",
+      "pageType": "review",
+      "bodyLength": 57014
+    },
+    {
+      "slug": "beste-platenspeler",
+      "pageType": "review",
+      "bodyLength": 52155
+    },
+    {
+      "slug": "beste-playstation",
+      "pageType": "review",
+      "bodyLength": 51451
+    },
+    {
+      "slug": "beste-portemonnee-heren",
+      "pageType": "review",
+      "bodyLength": 54374
+    },
+    {
+      "slug": "beste-pos",
+      "pageType": "review",
+      "bodyLength": 54253
+    },
+    {
+      "slug": "beste-powerbank",
+      "pageType": "review",
+      "bodyLength": 54721
+    },
+    {
+      "slug": "beste-printer",
+      "pageType": "review",
+      "bodyLength": 51197
+    },
+    {
+      "slug": "beste-printpapier",
+      "pageType": "review",
+      "bodyLength": 52328
+    },
+    {
+      "slug": "beste-processor",
+      "pageType": "review",
+      "bodyLength": 53552
+    },
+    {
+      "slug": "beste-project-management-software",
+      "pageType": "review",
+      "bodyLength": 54266
+    },
+    {
+      "slug": "beste-projectiescherm",
+      "pageType": "review",
+      "bodyLength": 53881
+    },
+    {
+      "slug": "beste-ps4-game",
+      "pageType": "review",
+      "bodyLength": 51182
+    },
+    {
+      "slug": "beste-ps4-gaming-headset",
+      "pageType": "review",
+      "bodyLength": 51756
+    },
+    {
+      "slug": "beste-racestoel",
+      "pageType": "review",
+      "bodyLength": 51271
+    },
+    {
+      "slug": "beste-racing-drone",
+      "pageType": "review",
+      "bodyLength": 51646
+    },
+    {
+      "slug": "beste-regenjas",
+      "pageType": "review",
+      "bodyLength": 53315
+    },
+    {
+      "slug": "beste-regenpak",
+      "pageType": "review",
+      "bodyLength": 53240
+    },
+    {
+      "slug": "beste-regenponcho",
+      "pageType": "review",
+      "bodyLength": 54119
+    },
+    {
+      "slug": "beste-rekenmachine",
+      "pageType": "review",
+      "bodyLength": 54711
+    },
+    {
+      "slug": "beste-router",
+      "pageType": "review",
+      "bodyLength": 50272
+    },
+    {
+      "slug": "beste-rugzak",
+      "pageType": "review",
+      "bodyLength": 53872
+    },
+    {
+      "slug": "beste-rugzak-middelbare-school",
+      "pageType": "review",
+      "bodyLength": 56988
+    },
+    {
+      "slug": "beste-schoolagenda",
+      "pageType": "review",
+      "bodyLength": 53778
+    },
+    {
+      "slug": "beste-schooletui",
+      "pageType": "review",
+      "bodyLength": 55386
+    },
+    {
+      "slug": "beste-schooltas",
+      "pageType": "review",
+      "bodyLength": 53620
+    },
+    {
+      "slug": "beste-smart-display",
+      "pageType": "review",
+      "bodyLength": 51944
+    },
+    {
+      "slug": "beste-smart-speaker",
+      "pageType": "review",
+      "bodyLength": 53308
+    },
+    {
+      "slug": "beste-smart-tv",
+      "pageType": "review",
+      "bodyLength": 51386
+    },
+    {
+      "slug": "beste-smartphone",
+      "pageType": "review",
+      "bodyLength": 53340
+    },
+    {
+      "slug": "beste-smartwatch",
+      "pageType": "review",
+      "bodyLength": 52639
+    },
+    {
+      "slug": "beste-smartwatch-met-belfunctie",
+      "pageType": "review",
+      "bodyLength": 53171
+    },
+    {
+      "slug": "beste-snellader",
+      "pageType": "review",
+      "bodyLength": 51103
+    },
+    {
+      "slug": "beste-solar-powerbank",
+      "pageType": "review",
+      "bodyLength": 55107
+    },
+    {
+      "slug": "beste-sonos-speaker",
+      "pageType": "review",
+      "bodyLength": 51779
+    },
+    {
+      "slug": "beste-soundbar",
+      "pageType": "review",
+      "bodyLength": 51803
+    },
+    {
+      "slug": "beste-soundbar-met-subwoofer",
+      "pageType": "review",
+      "bodyLength": 52645
+    },
+    {
+      "slug": "beste-spiegelreflexcamera",
+      "pageType": "review",
+      "bodyLength": 50972
+    },
+    {
+      "slug": "beste-systeemcamera",
+      "pageType": "review",
+      "bodyLength": 51514
+    },
+    {
+      "slug": "beste-tablet",
+      "pageType": "review",
+      "bodyLength": 53405
+    },
+    {
+      "slug": "beste-teken-tablet",
+      "pageType": "review",
+      "bodyLength": 54674
+    },
+    {
+      "slug": "beste-telefoonhouder-fiets",
+      "pageType": "review",
+      "bodyLength": 55097
+    },
+    {
+      "slug": "beste-telescoop",
+      "pageType": "review",
+      "bodyLength": 55453
+    },
+    {
+      "slug": "beste-thermoskan",
+      "pageType": "review",
+      "bodyLength": 54017
+    },
+    {
+      "slug": "beste-time-tracking",
+      "pageType": "review",
+      "bodyLength": 55067
+    },
+    {
+      "slug": "beste-toetsenbord",
+      "pageType": "review",
+      "bodyLength": 53520
+    },
+    {
+      "slug": "beste-toilettas",
+      "pageType": "review",
+      "bodyLength": 53586
+    },
+    {
+      "slug": "beste-travel-wallet",
+      "pageType": "review",
+      "bodyLength": 54344
+    },
+    {
+      "slug": "beste-tv-box",
+      "pageType": "review",
+      "bodyLength": 54274
+    },
+    {
+      "slug": "beste-ultrabook",
+      "pageType": "review",
+      "bodyLength": 55036
+    },
+    {
+      "slug": "beste-ultrawide-monitor",
+      "pageType": "review",
+      "bodyLength": 54647
+    },
+    {
+      "slug": "beste-usb-c-kabel",
+      "pageType": "review",
+      "bodyLength": 53910
+    },
+    {
+      "slug": "beste-usb-stick",
+      "pageType": "review",
+      "bodyLength": 53481
+    },
+    {
+      "slug": "beste-vergrootglas",
+      "pageType": "review",
+      "bodyLength": 54280
+    },
+    {
+      "slug": "beste-verrekijker",
+      "pageType": "review",
+      "bodyLength": 54259
+    },
+    {
+      "slug": "beste-videocamera",
+      "pageType": "review",
+      "bodyLength": 51251
+    },
+    {
+      "slug": "beste-videokaart",
+      "pageType": "review",
+      "bodyLength": 53379
+    },
+    {
+      "slug": "beste-virusscanner",
+      "pageType": "review",
+      "bodyLength": 53693
+    },
+    {
+      "slug": "beste-vpn",
+      "pageType": "review",
+      "bodyLength": 54416
+    },
+    {
+      "slug": "beste-vr-bril",
+      "pageType": "review",
+      "bodyLength": 52014
+    },
+    {
+      "slug": "beste-vulpen",
+      "pageType": "review",
+      "bodyLength": 52923
+    },
+    {
+      "slug": "beste-walkie-talkie",
+      "pageType": "review",
+      "bodyLength": 54590
+    },
+    {
+      "slug": "beste-wandelschoenen",
+      "pageType": "review",
+      "bodyLength": 54527
+    },
+    {
+      "slug": "beste-waterfles",
+      "pageType": "review",
+      "bodyLength": 53914
+    },
+    {
+      "slug": "beste-webcam",
+      "pageType": "review",
+      "bodyLength": 54030
+    },
+    {
+      "slug": "beste-webinar-software",
+      "pageType": "review",
+      "bodyLength": 55133
+    },
+    {
+      "slug": "beste-webshop-software",
+      "pageType": "review",
+      "bodyLength": 54977
+    },
+    {
+      "slug": "beste-weekplanner",
+      "pageType": "review",
+      "bodyLength": 54725
+    },
+    {
+      "slug": "beste-wekker",
+      "pageType": "review",
+      "bodyLength": 53548
+    },
+    {
+      "slug": "beste-wereldbol",
+      "pageType": "review",
+      "bodyLength": 54113
+    },
+    {
+      "slug": "beste-wereldkaart",
+      "pageType": "review",
+      "bodyLength": 53573
+    },
+    {
+      "slug": "beste-wereldstekker",
+      "pageType": "review",
+      "bodyLength": 55182
+    },
+    {
+      "slug": "beste-white-noise-machine",
+      "pageType": "review",
+      "bodyLength": 52293
+    },
+    {
+      "slug": "beste-whiteboard",
+      "pageType": "review",
+      "bodyLength": 54222
+    },
+    {
+      "slug": "beste-wifi-speaker",
+      "pageType": "review",
+      "bodyLength": 51800
+    },
+    {
+      "slug": "beste-wifi-versterker",
+      "pageType": "review",
+      "bodyLength": 54353
+    },
+    {
+      "slug": "beste-xbox",
+      "pageType": "review",
+      "bodyLength": 53933
+    },
+    {
+      "slug": "beste-zakelijke-laptop",
+      "pageType": "review",
+      "bodyLength": 55146
+    },
+    {
+      "slug": "beste-zaklamp",
+      "pageType": "review",
+      "bodyLength": 54533
+    },
+    {
+      "slug": "beste-zit-sta-bureau",
+      "pageType": "review",
+      "bodyLength": 53525
+    },
+    {
+      "slug": "beste-zonnehoed",
+      "pageType": "review",
+      "bodyLength": 52643
+    },
+    {
+      "slug": "acer-aspire-7-a715-75g-78r1",
+      "pageType": "page",
+      "bodyLength": 3020
+    },
+    {
+      "slug": "acer-nitro-5-an515-55-79px",
+      "pageType": "page",
+      "bodyLength": 3282
+    },
+    {
+      "slug": "acer-nitro-5-an515-57-55j1-",
+      "pageType": "page",
+      "bodyLength": 3014
+    },
+    {
+      "slug": "acer-nitro-5-an515-57-72js",
+      "pageType": "page",
+      "bodyLength": 3216
+    },
+    {
+      "slug": "acer-nitro-5-an515-57-77k2",
+      "pageType": "page",
+      "bodyLength": 3126
+    },
+    {
+      "slug": "acer-nitro-5-an517-54-713k-",
+      "pageType": "page",
+      "bodyLength": 3218
+    },
+    {
+      "slug": "acer-nitro-5-an517-54-71rn",
+      "pageType": "page",
+      "bodyLength": 3163
+    },
+    {
+      "slug": "acer-nitro-5-an517-54-75z7",
+      "pageType": "page",
+      "bodyLength": 3210
+    },
+    {
+      "slug": "acer-nitro-n50-120-ar53050-01",
+      "pageType": "page",
+      "bodyLength": 3292
+    },
+    {
+      "slug": "acer-nitro-n50-640-i512-04",
+      "pageType": "page",
+      "bodyLength": 3194
+    },
+    {
+      "slug": "acer-nitro-n50-640-i512-07",
+      "pageType": "page",
+      "bodyLength": 3449
+    },
+    {
+      "slug": "acer-nitro-n50-640-i512-10",
+      "pageType": "page",
+      "bodyLength": 3128
+    },
+    {
+      "slug": "acer-nitro-n50-650-i713-24",
+      "pageType": "page",
+      "bodyLength": 3244
+    },
+    {
+      "slug": "acer-nitro-n50-650-i713-26",
+      "pageType": "page",
+      "bodyLength": 3058
+    },
+    {
+      "slug": "acer-predator-helios-16-ph16-71-99hu",
+      "pageType": "page",
+      "bodyLength": 3206
+    },
+    {
+      "slug": "acer-predator-helios-16-ph16-71-99st",
+      "pageType": "page",
+      "bodyLength": 3167
+    },
+    {
+      "slug": "acer-predator-helios-18-ph18-71-94p1",
+      "pageType": "page",
+      "bodyLength": 3174
+    },
+    {
+      "slug": "acer-predator-helios-18-ph18-71-97xx",
+      "pageType": "page",
+      "bodyLength": 3150
+    },
+    {
+      "slug": "acer-predator-helios-300-ph315-54-98b2",
+      "pageType": "page",
+      "bodyLength": 3178
+    },
+    {
+      "slug": "acer-predator-helios-300-ph317-56-722c-",
+      "pageType": "page",
+      "bodyLength": 2947
+    },
+    {
+      "slug": "acer-predator-orion-3000-640-i7404g",
+      "pageType": "page",
+      "bodyLength": 3080
+    },
+    {
+      "slug": "acer-predator-orion-3000-640-i7412g",
+      "pageType": "page",
+      "bodyLength": 3140
+    },
+    {
+      "slug": "acer-predator-orion-3000-650-i5407g",
+      "pageType": "page",
+      "bodyLength": 3286
+    },
+    {
+      "slug": "acer-predator-orion-3000-650-i7424g",
+      "pageType": "page",
+      "bodyLength": 3086
+    },
+    {
+      "slug": "acer-predator-orion-5000-640-i7404g",
+      "pageType": "page",
+      "bodyLength": 2979
+    },
+    {
+      "slug": "acer-predator-orion-5000-640-i7410g",
+      "pageType": "page",
+      "bodyLength": 2974
+    },
+    {
+      "slug": "acer-predator-orion-5000-650-i7227g",
+      "pageType": "page",
+      "bodyLength": 3156
+    },
+    {
+      "slug": "acer-predator-orion-5000-650-i7416g",
+      "pageType": "page",
+      "bodyLength": 3106
+    },
+    {
+      "slug": "acer-predator-orion-5000-650-i7418g",
+      "pageType": "page",
+      "bodyLength": 3100
+    },
+    {
+      "slug": "acer-predator-orion-7000-640-i9k208gl",
+      "pageType": "page",
+      "bodyLength": 2972
+    },
+    {
+      "slug": "acer-predator-orion-7000-640-i9k210gl",
+      "pageType": "page",
+      "bodyLength": 2926
+    },
+    {
+      "slug": "acer-predator-orion-7000-640-i9k212gl",
+      "pageType": "page",
+      "bodyLength": 3104
+    },
+    {
+      "slug": "acer-predator-orion-7000-650-i7k230gl",
+      "pageType": "page",
+      "bodyLength": 2948
+    },
+    {
+      "slug": "acer-predator-orion-7000-650-i7k515gl",
+      "pageType": "page",
+      "bodyLength": 3003
+    },
+    {
+      "slug": "acer-predator-orion-7000-650-i7k516gl",
+      "pageType": "page",
+      "bodyLength": 3012
+    },
+    {
+      "slug": "acer-predator-orion-7000-650-i9k508gl",
+      "pageType": "page",
+      "bodyLength": 3138
+    },
+    {
+      "slug": "acer-predator-orion-7000-650-i9k520gl",
+      "pageType": "page",
+      "bodyLength": 3106
+    },
+    {
+      "slug": "acer-predator-triton-500-se-pt516-52s-98la",
+      "pageType": "page",
+      "bodyLength": 3000
+    },
+    {
+      "slug": "asus-rog-flow-x13-gv301rc-lj044w",
+      "pageType": "page",
+      "bodyLength": 2996
+    },
+    {
+      "slug": "asus-rog-flow-x16-gv601vu-nf022w",
+      "pageType": "page",
+      "bodyLength": 3204
+    },
+    {
+      "slug": "asus-rog-strix-g15-g513rm-hf150w",
+      "pageType": "page",
+      "bodyLength": 3183
+    },
+    {
+      "slug": "asus-rog-strix-g16-g614ji-n4153w",
+      "pageType": "page",
+      "bodyLength": 3171
+    },
+    {
+      "slug": "asus-rog-strix-g16-g614jv-n3110w",
+      "pageType": "page",
+      "bodyLength": 3231
+    },
+    {
+      "slug": "asus-rog-strix-g16-g614jz-n3012w",
+      "pageType": "page",
+      "bodyLength": 3160
+    },
+    {
+      "slug": "asus-rog-strix-g17-g713ic-hx010w",
+      "pageType": "page",
+      "bodyLength": 2938
+    },
+    {
+      "slug": "asus-rog-strix-g17-g713pv-hx103w",
+      "pageType": "page",
+      "bodyLength": 3253
+    },
+    {
+      "slug": "asus-rog-strix-g17-g713qe-hx009t",
+      "pageType": "page",
+      "bodyLength": 3157
+    },
+    {
+      "slug": "asus-rog-strix-g17-g713rc-hx105w",
+      "pageType": "page",
+      "bodyLength": 3027
+    },
+    {
+      "slug": "asus-rog-strix-g17-g713rm-kh091w",
+      "pageType": "page",
+      "bodyLength": 3250
+    },
+    {
+      "slug": "asus-rog-strix-g17-g713rs-kh005w",
+      "pageType": "page",
+      "bodyLength": 3240
+    },
+    {
+      "slug": "asus-rog-strix-g18-g814ji-n6079w",
+      "pageType": "page",
+      "bodyLength": 3258
+    },
+    {
+      "slug": "asus-rog-strix-scar-15-g533zx-ln060w",
+      "pageType": "page",
+      "bodyLength": 3143
+    },
+    {
+      "slug": "asus-rog-strix-scar-16-g634jz-n4004w",
+      "pageType": "page",
+      "bodyLength": 3003
+    },
+    {
+      "slug": "asus-rog-strix-scar-17-g733pz-ll026w",
+      "pageType": "page",
+      "bodyLength": 3505
+    },
+    {
+      "slug": "asus-rog-zephyrus-g14-ga402nu-n2027w",
+      "pageType": "page",
+      "bodyLength": 3260
+    },
+    {
+      "slug": "asus-rog-zephyrus-g16-gu603vi-n4015w",
+      "pageType": "page",
+      "bodyLength": 3189
+    },
+    {
+      "slug": "asus-rog-zephyrus-m16-gu603zx-k8045w",
+      "pageType": "page",
+      "bodyLength": 3210
+    },
+    {
+      "slug": "asus-rog-zephyrus-m16-gu604vz-nm008w",
+      "pageType": "page",
+      "bodyLength": 3215
+    },
+    {
+      "slug": "asus-tuf-dash-f15fx517zr-hf011w",
+      "pageType": "page",
+      "bodyLength": 2991
+    },
+    {
+      "slug": "asus-tuf-gaming-a15-fa507nu-lp045w",
+      "pageType": "page",
+      "bodyLength": 3255
+    },
+    {
+      "slug": "asus-tuf-gaming-a15-fa507nu-lp083w",
+      "pageType": "page",
+      "bodyLength": 3090
+    },
+    {
+      "slug": "asus-tuf-gaming-a15-fa507nv-lp031w",
+      "pageType": "page",
+      "bodyLength": 3237
+    },
+    {
+      "slug": "asus-tuf-gaming-a15-fa507nv-lp066w",
+      "pageType": "page",
+      "bodyLength": 3393
+    },
+    {
+      "slug": "asus-tuf-gaming-a15-fa507xi-lp072w",
+      "pageType": "page",
+      "bodyLength": 2932
+    },
+    {
+      "slug": "asus-tuf-gaming-a15-fa507xi-lp081w",
+      "pageType": "page",
+      "bodyLength": 3091
+    },
+    {
+      "slug": "asus-tuf-gaming-a16-advantage-edition-fa617ns-n3085w",
+      "pageType": "page",
+      "bodyLength": 3253
+    },
+    {
+      "slug": "asus-tuf-gaming-a17-fa707nu-hx023w",
+      "pageType": "page",
+      "bodyLength": 3251
+    },
+    {
+      "slug": "asus-tuf-gaming-a17-fa707rr-hx006w",
+      "pageType": "page",
+      "bodyLength": 3019
+    },
+    {
+      "slug": "asus-tuf-gaming-f15-fx506hc-hn374w",
+      "pageType": "page",
+      "bodyLength": 3282
+    },
+    {
+      "slug": "asus-tuf-gaming-f15-fx506hf-hn018w",
+      "pageType": "page",
+      "bodyLength": 3229
+    },
+    {
+      "slug": "asus-tuf-gaming-f15-fx506hm-hn004w",
+      "pageType": "page",
+      "bodyLength": 3202
+    },
+    {
+      "slug": "asus-tuf-gaming-f15-fx507zc4-hn172w",
+      "pageType": "page",
+      "bodyLength": 3214
+    },
+    {
+      "slug": "erazer-medion-beast-x25-md62475",
+      "pageType": "page",
+      "bodyLength": 3331
+    },
+    {
+      "slug": "erazer-medion-engineer-e10-md35177",
+      "pageType": "page",
+      "bodyLength": 3411
+    },
+    {
+      "slug": "erazer-medion-engineer-p10-md35151",
+      "pageType": "page",
+      "bodyLength": 3152
+    },
+    {
+      "slug": "erazer-medion-engineer-p10-md35179",
+      "pageType": "page",
+      "bodyLength": 3248
+    },
+    {
+      "slug": "erazer-medion-engineer-p10-md35262",
+      "pageType": "page",
+      "bodyLength": 3011
+    },
+    {
+      "slug": "erazer-medion-engineer-p10-md35263",
+      "pageType": "page",
+      "bodyLength": 2993
+    },
+    {
+      "slug": "erazer-medion-engineer-p10-md35354",
+      "pageType": "page",
+      "bodyLength": 3178
+    },
+    {
+      "slug": "erazer-medion-engineer-x20-md35356",
+      "pageType": "page",
+      "bodyLength": 2887
+    },
+    {
+      "slug": "erazer-medion-hunter-x20-md35357",
+      "pageType": "page",
+      "bodyLength": 3062
+    },
+    {
+      "slug": "erazer-medion-recon-e20-md35347",
+      "pageType": "page",
+      "bodyLength": 3227
+    },
+    {
+      "slug": "erazer-medion-specialist-p10-md62477",
+      "pageType": "page",
+      "bodyLength": 3316
+    },
+    {
+      "slug": "hp-omen-16-c0970nd",
+      "pageType": "page",
+      "bodyLength": 3059
+    },
+    {
+      "slug": "hp-omen-16-k0970nd",
+      "pageType": "page",
+      "bodyLength": 3118
+    },
+    {
+      "slug": "hp-omen-16-n0977nd",
+      "pageType": "page",
+      "bodyLength": 3093
+    },
+    {
+      "slug": "hp-omen-16-n0979nd",
+      "pageType": "page",
+      "bodyLength": 3109
+    },
+    {
+      "slug": "hp-omen-16-wd0973nd",
+      "pageType": "page",
+      "bodyLength": 3102
+    },
+    {
+      "slug": "hp-omen-16-wd0975nd",
+      "pageType": "page",
+      "bodyLength": 3240
+    },
+    {
+      "slug": "hp-omen-17-ck1009nd",
+      "pageType": "page",
+      "bodyLength": 3237
+    },
+    {
+      "slug": "hp-omen-17-ck1971nd",
+      "pageType": "page",
+      "bodyLength": 3171
+    },
+    {
+      "slug": "hp-omen-17-ck1976nd",
+      "pageType": "page",
+      "bodyLength": 3186
+    },
+    {
+      "slug": "hp-omen-17-ck1977nd",
+      "pageType": "page",
+      "bodyLength": 3071
+    },
+    {
+      "slug": "hp-omen-17-ck2980nd",
+      "pageType": "page",
+      "bodyLength": 3204
+    },
+    {
+      "slug": "hp-omen-17-ck2990nd",
+      "pageType": "page",
+      "bodyLength": 3107
+    },
+    {
+      "slug": "hp-omen-17-cm2960nd",
+      "pageType": "page",
+      "bodyLength": 3238
+    },
+    {
+      "slug": "hp-omen-17-cm2970nd",
+      "pageType": "page",
+      "bodyLength": 3192
+    },
+    {
+      "slug": "hp-omen-25l-gt14-0500nd",
+      "pageType": "page",
+      "bodyLength": 3167
+    },
+    {
+      "slug": "hp-omen-25l-gt14-0505nd",
+      "pageType": "page",
+      "bodyLength": 3190
+    },
+    {
+      "slug": "hp-omen-25l-gt14-0970nd",
+      "pageType": "page",
+      "bodyLength": 3156
+    },
+    {
+      "slug": "hp-omen-25l-gt15-0600nd",
+      "pageType": "page",
+      "bodyLength": 3185
+    },
+    {
+      "slug": "hp-omen-25l-gt15-0700nd",
+      "pageType": "page",
+      "bodyLength": 3250
+    },
+    {
+      "slug": "hp-omen-25l-gt15-0930nd",
+      "pageType": "page",
+      "bodyLength": 3159
+    },
+    {
+      "slug": "hp-omen-25l-gt15-0950nd",
+      "pageType": "page",
+      "bodyLength": 3002
+    },
+    {
+      "slug": "hp-omen-25l-gt15-0970nd",
+      "pageType": "page",
+      "bodyLength": 2868
+    },
+    {
+      "slug": "hp-omen-25l-gt15-1970nd",
+      "pageType": "page",
+      "bodyLength": 3049
+    },
+    {
+      "slug": "hp-omen-30l-desktop-gt13-1646nd",
+      "pageType": "page",
+      "bodyLength": 3005
+    },
+    {
+      "slug": "hp-omen-30l-gt13-1566nd",
+      "pageType": "page",
+      "bodyLength": 3190
+    },
+    {
+      "slug": "hp-omen-30l-gt13-1630nd",
+      "pageType": "page",
+      "bodyLength": 2931
+    },
+    {
+      "slug": "hp-omen-30l-gt13-1633nd",
+      "pageType": "page",
+      "bodyLength": 3014
+    },
+    {
+      "slug": "hp-omen-30l-gt13-1634nd",
+      "pageType": "page",
+      "bodyLength": 3017
+    },
+    {
+      "slug": "hp-omen-30l-gt13-1635nd",
+      "pageType": "page",
+      "bodyLength": 2970
+    },
+    {
+      "slug": "hp-omen-40l-gt21-0900nd",
+      "pageType": "page",
+      "bodyLength": 3044
+    },
+    {
+      "slug": "hp-omen-40l-gt21-0960nd",
+      "pageType": "page",
+      "bodyLength": 2907
+    },
+    {
+      "slug": "hp-omen-40l-gt21-0970nd",
+      "pageType": "page",
+      "bodyLength": 2892
+    },
+    {
+      "slug": "hp-omen-40l-gt21-1920nd",
+      "pageType": "page",
+      "bodyLength": 3173
+    },
+    {
+      "slug": "hp-omen-40l-gt21-1950nd",
+      "pageType": "page",
+      "bodyLength": 3058
+    },
+    {
+      "slug": "hp-omen-40l-gt21-1977nd",
+      "pageType": "page",
+      "bodyLength": 3130
+    },
+    {
+      "slug": "hp-omen-45l-gt22-0900nd",
+      "pageType": "page",
+      "bodyLength": 2932
+    },
+    {
+      "slug": "hp-omen-45l-gt22-1970nd",
+      "pageType": "page",
+      "bodyLength": 3171
+    },
+    {
+      "slug": "hp-omen-45l-gt22-1975nd",
+      "pageType": "page",
+      "bodyLength": 2950
+    },
+    {
+      "slug": "hp-omen-45l-gt22-1977nd",
+      "pageType": "page",
+      "bodyLength": 3234
+    },
+    {
+      "slug": "hp-omen-45l-gt22-1979nd",
+      "pageType": "page",
+      "bodyLength": 2972
+    },
+    {
+      "slug": "hp-omen-45l-gt22-1990nd",
+      "pageType": "page",
+      "bodyLength": 3036
+    },
+    {
+      "slug": "hp-omen-gt11-1440nd",
+      "pageType": "page",
+      "bodyLength": 3113
+    },
+    {
+      "slug": "hp-omen-transcend-16-u0970nd",
+      "pageType": "page",
+      "bodyLength": 3216
+    },
+    {
+      "slug": "hp-omen-transcend-16-u0971nd",
+      "pageType": "page",
+      "bodyLength": 3175
+    },
+    {
+      "slug": "hp-omen-transcend-16-u0977nd",
+      "pageType": "page",
+      "bodyLength": 3076
+    },
+    {
+      "slug": "hp-omen-transcend-16-u0979nd",
+      "pageType": "page",
+      "bodyLength": 2987
+    },
+    {
+      "slug": "hp-victus-15-fa0952nd",
+      "pageType": "page",
+      "bodyLength": 3096
+    },
+    {
+      "slug": "hp-victus-15-fa1925nd",
+      "pageType": "page",
+      "bodyLength": 3141
+    },
+    {
+      "slug": "hp-victus-15-fb0950nd",
+      "pageType": "page",
+      "bodyLength": 3005
+    },
+    {
+      "slug": "hp-victus-15l-tg02-0305nd",
+      "pageType": "page",
+      "bodyLength": 3198
+    },
+    {
+      "slug": "hp-victus-16-d0970nd",
+      "pageType": "page",
+      "bodyLength": 2986
+    },
+    {
+      "slug": "hp-victus-16-e0320nd",
+      "pageType": "page",
+      "bodyLength": 3220
+    },
+    {
+      "slug": "hp-victus-16-r0970nd",
+      "pageType": "page",
+      "bodyLength": 3104
+    },
+    {
+      "slug": "hp-victus-16-r0972nd",
+      "pageType": "page",
+      "bodyLength": 3066
+    },
+    {
+      "slug": "hp-victus-16-r0976nd",
+      "pageType": "page",
+      "bodyLength": 2998
+    },
+    {
+      "slug": "hp-victus-tg02-0900nd",
+      "pageType": "page",
+      "bodyLength": 3102
+    },
+    {
+      "slug": "hp-victus-tg02-0910nd",
+      "pageType": "page",
+      "bodyLength": 3164
+    },
+    {
+      "slug": "lenovo-ideacentre-g5-14acn6-90rw00c5mh",
+      "pageType": "page",
+      "bodyLength": 3139
+    },
+    {
+      "slug": "lenovo-ideacentre-g5-14acn6-90rw00eqmh",
+      "pageType": "page",
+      "bodyLength": 3178
+    },
+    {
+      "slug": "lenovo-ideacentre-g5-14acn6-90rw00ermh",
+      "pageType": "page",
+      "bodyLength": 2944
+    },
+    {
+      "slug": "lenovo-ideacentre-g5-14acn6-90rw00esmh",
+      "pageType": "page",
+      "bodyLength": 3236
+    },
+    {
+      "slug": "lenovo-ideacentre-g5-17aib7-90t1006kmh",
+      "pageType": "page",
+      "bodyLength": 3289
+    },
+    {
+      "slug": "lenovo-ideacentre-g5-17aib7-90t1006lmh",
+      "pageType": "page",
+      "bodyLength": 3132
+    },
+    {
+      "slug": "lenovo-ideacentre-g5-17aib7-90t1006mmh",
+      "pageType": "page",
+      "bodyLength": 3269
+    },
+    {
+      "slug": "lenovo-ideacentre-g5-17aib7-90t1006nmh",
+      "pageType": "page",
+      "bodyLength": 3240
+    },
+    {
+      "slug": "lenovo-ideapad-5-chrome-gaming-16iau7-82v8000pmh",
+      "pageType": "page",
+      "bodyLength": 3004
+    },
+    {
+      "slug": "lenovo-ideapad-5-chrome-gaming-16iau7-82v8000qmh",
+      "pageType": "page",
+      "bodyLength": 3112
+    },
+    {
+      "slug": "lenovo-ideapad-gaming-3-15ach6-82k201a7mh",
+      "pageType": "page",
+      "bodyLength": 3266
+    },
+    {
+      "slug": "lenovo-ideapad-gaming-3-15ach6-82k201a9mh",
+      "pageType": "page",
+      "bodyLength": 3262
+    },
+    {
+      "slug": "lenovo-ideapad-gaming-3-15ach6-82k201aamh",
+      "pageType": "page",
+      "bodyLength": 3282
+    },
+    {
+      "slug": "lenovo-ideapad-gaming-3-15ach6-82k201wpmh",
+      "pageType": "page",
+      "bodyLength": 3229
+    },
+    {
+      "slug": "lenovo-ideapad-gaming-3-15ach6-82k2023mmh",
+      "pageType": "page",
+      "bodyLength": 3676
+    },
+    {
+      "slug": "lenovo-ideapad-gaming-3-15iah7-82s900nrmh",
+      "pageType": "page",
+      "bodyLength": 3260
+    },
+    {
+      "slug": "lenovo-ideapad-gaming-3-15iah7-82s900nsmh",
+      "pageType": "page",
+      "bodyLength": 3258
+    },
+    {
+      "slug": "lenovo-ideapad-gaming-3-15iah7-82s9010vmh",
+      "pageType": "page",
+      "bodyLength": 3211
+    },
+    {
+      "slug": "lenovo-ideapad-gaming-3-15imh05-81y400ggmh",
+      "pageType": "page",
+      "bodyLength": 2948
+    },
+    {
+      "slug": "lenovo-ideapad-gaming-3-16iah7-82sa00aqmh",
+      "pageType": "page",
+      "bodyLength": 3228
+    },
+    {
+      "slug": "lenovo-ideapad-gaming-3-16iah7-82sa00armh",
+      "pageType": "page",
+      "bodyLength": 3186
+    },
+    {
+      "slug": "lenovo-legion-5-15ach6h-82ju019tmh",
+      "pageType": "page",
+      "bodyLength": 3187
+    },
+    {
+      "slug": "lenovo-legion-5-15ach6h-82ju019vmh",
+      "pageType": "page",
+      "bodyLength": 3569
+    },
+    {
+      "slug": "lenovo-legion-5-15arh7h-82rd0086mh",
+      "pageType": "page",
+      "bodyLength": 3220
+    },
+    {
+      "slug": "lenovo-legion-5-15arh7h-82rd0088mh",
+      "pageType": "page",
+      "bodyLength": 3230
+    },
+    {
+      "slug": "lenovo-legion-5-15iah7h-82rb00hkmh",
+      "pageType": "page",
+      "bodyLength": 3210
+    },
+    {
+      "slug": "lenovo-legion-5-15iah7h-82rb00hlmh",
+      "pageType": "page",
+      "bodyLength": 3307
+    },
+    {
+      "slug": "lenovo-legion-5-15iah7h-82rb00hpmh",
+      "pageType": "page",
+      "bodyLength": 3231
+    },
+    {
+      "slug": "lenovo-legion-5-15iah7h-82rb00t5mh",
+      "pageType": "page",
+      "bodyLength": 3101
+    },
+    {
+      "slug": "lenovo-legion-5-15ith6h-82jh005nmh",
+      "pageType": "page",
+      "bodyLength": 3093
+    },
+    {
+      "slug": "lenovo-legion-5-17ach6-82k000a8mh",
+      "pageType": "page",
+      "bodyLength": 3118
+    },
+    {
+      "slug": "lenovo-legion-5-17ach6-82k000a9mh",
+      "pageType": "page",
+      "bodyLength": 3181
+    },
+    {
+      "slug": "lenovo-legion-5-17ach6h-82jy00jemh",
+      "pageType": "page",
+      "bodyLength": 3244
+    },
+    {
+      "slug": "lenovo-legion-5-17ach6h-82jy00jgmh",
+      "pageType": "page",
+      "bodyLength": 3068
+    },
+    {
+      "slug": "lenovo-legion-5-17ith6h-82jm001emh",
+      "pageType": "page",
+      "bodyLength": 3149
+    },
+    {
+      "slug": "lenovo-legion-5-pro-16ach6h-82jq00elmh",
+      "pageType": "page",
+      "bodyLength": 3227
+    },
+    {
+      "slug": "lenovo-legion-5-pro-16arh7h-82rg00g4mh",
+      "pageType": "page",
+      "bodyLength": 3055
+    },
+    {
+      "slug": "lenovo-legion-5-pro-16iah7h-82rf00kjmh",
+      "pageType": "page",
+      "bodyLength": 3189
+    },
+    {
+      "slug": "lenovo-legion-5-pro-16iah7h-82rf00klmh",
+      "pageType": "page",
+      "bodyLength": 3338
+    },
+    {
+      "slug": "lenovo-legion-5-pro-16iah7h-82rf00q3mh",
+      "pageType": "page",
+      "bodyLength": 3223
+    },
+    {
+      "slug": "lenovo-legion-5-pro-16iah7h-82rf00q4mh",
+      "pageType": "page",
+      "bodyLength": 3117
+    },
+    {
+      "slug": "lenovo-legion-5-pro-16iah7h-82rf00q5mh",
+      "pageType": "page",
+      "bodyLength": 3211
+    },
+    {
+      "slug": "lenovo-legion-5-pro-16ith6h-82jd00b3mh",
+      "pageType": "page",
+      "bodyLength": 3233
+    },
+    {
+      "slug": "lenovo-legion-7-16iax7-82td009amh",
+      "pageType": "page",
+      "bodyLength": 3025
+    },
+    {
+      "slug": "lenovo-legion-t5-26amr5-90rc017mmh",
+      "pageType": "page",
+      "bodyLength": 3206
+    },
+    {
+      "slug": "lenovo-legion-t5-26amr5-90rc017nmh",
+      "pageType": "page",
+      "bodyLength": 3074
+    },
+    {
+      "slug": "lenovo-legion-t5-26amr5-90rc017pmh",
+      "pageType": "page",
+      "bodyLength": 3559
+    },
+    {
+      "slug": "lenovo-legion-t5-26amr5-90rc019pmh",
+      "pageType": "page",
+      "bodyLength": 2832
+    },
+    {
+      "slug": "lenovo-legion-t5-26amr5-90rc019qmh",
+      "pageType": "page",
+      "bodyLength": 2822
+    },
+    {
+      "slug": "lenovo-legion-t5-26amr5-90rc019smh",
+      "pageType": "page",
+      "bodyLength": 2986
+    },
+    {
+      "slug": "lenovo-legion-t5-26amr5-90rc019tmh",
+      "pageType": "page",
+      "bodyLength": 3002
+    },
+    {
+      "slug": "lenovo-legion-t5-26amr5-90rc019umh",
+      "pageType": "page",
+      "bodyLength": 3507
+    },
+    {
+      "slug": "lenovo-legion-t5-26amr5-90rc019vmh",
+      "pageType": "page",
+      "bodyLength": 3040
+    },
+    {
+      "slug": "lenovo-legion-t5-26amr5-90rc01g9mh",
+      "pageType": "page",
+      "bodyLength": 2784
+    },
+    {
+      "slug": "lenovo-legion-t5-26amr5-90rc01gxmh",
+      "pageType": "page",
+      "bodyLength": 3297
+    },
+    {
+      "slug": "lenovo-legion-t5-26amr5-90rc01hvmh",
+      "pageType": "page",
+      "bodyLength": 3296
+    },
+    {
+      "slug": "lenovo-legion-t5-26amr5-90rc01j5mh",
+      "pageType": "page",
+      "bodyLength": 3181
+    },
+    {
+      "slug": "lenovo-legion-t5-26iab7-90sv007lmh",
+      "pageType": "page",
+      "bodyLength": 3135
+    },
+    {
+      "slug": "lenovo-legion-t5-26iab7-90sv007mmh",
+      "pageType": "page",
+      "bodyLength": 3248
+    },
+    {
+      "slug": "lenovo-legion-t5-26iab7-90sv007nmh",
+      "pageType": "page",
+      "bodyLength": 3230
+    },
+    {
+      "slug": "lenovo-legion-t5-26iab7-90sv00afmh",
+      "pageType": "page",
+      "bodyLength": 3308
+    },
+    {
+      "slug": "lenovo-legion-t5-26iob6-90rt004smh",
+      "pageType": "page",
+      "bodyLength": 2688
+    },
+    {
+      "slug": "lenovo-legion-t5-26iob6-90rt00ubmh",
+      "pageType": "page",
+      "bodyLength": 3250
+    },
+    {
+      "slug": "lenovo-legion-t7-34iaz7-90s2007amh",
+      "pageType": "page",
+      "bodyLength": 2953
+    },
+    {
+      "slug": "lenovo-legion-t7-34iaz7-90s2007bmh",
+      "pageType": "page",
+      "bodyLength": 2959
+    },
+    {
+      "slug": "lenovo-legion-t7-34iaz7-90s2007cmh",
+      "pageType": "page",
+      "bodyLength": 3034
+    },
+    {
+      "slug": "lenovo-legion-t7-34iaz7-90s2007dmh",
+      "pageType": "page",
+      "bodyLength": 3003
+    },
+    {
+      "slug": "lenovo-legion-t7-34iaz7-90s2007emh",
+      "pageType": "page",
+      "bodyLength": 2927
+    },
+    {
+      "slug": "lenovo-legion-t7-34iaz7-90s20080mh",
+      "pageType": "page",
+      "bodyLength": 3173
+    },
+    {
+      "slug": "lenovo-legion-t7-34imz5-90q900bpmh",
+      "pageType": "page",
+      "bodyLength": 3022
+    },
+    {
+      "slug": "lenovo-legion-t7-34imz5-90q900brmh",
+      "pageType": "page",
+      "bodyLength": 2850
+    },
+    {
+      "slug": "lenovo-legion-t7-34imz5-90q900btmh",
+      "pageType": "page",
+      "bodyLength": 3037
+    },
+    {
+      "slug": "lenovo-legion-t7-34imz5-90q900d4mh",
+      "pageType": "page",
+      "bodyLength": 3055
+    },
+    {
+      "slug": "medion-erazer-beast-x40-md62505-nl",
+      "pageType": "page",
+      "bodyLength": 3242
+    },
+    {
+      "slug": "medion-erazer-beast-x40-md62507-nl",
+      "pageType": "page",
+      "bodyLength": 3300
+    },
+    {
+      "slug": "medion-erazer-crawler-e30-md62548-nl",
+      "pageType": "page",
+      "bodyLength": 3260
+    },
+    {
+      "slug": "medion-erazer-crawler-e40-md62518",
+      "pageType": "page",
+      "bodyLength": 3302
+    },
+    {
+      "slug": "medion-erazer-hunter-x30-md35398",
+      "pageType": "page",
+      "bodyLength": 3389
+    },
+    {
+      "slug": "medion-erazer-hunter-x30-md35399",
+      "pageType": "page",
+      "bodyLength": 2914
+    },
+    {
+      "slug": "medion-erazer-major-x20-md62520",
+      "pageType": "page",
+      "bodyLength": 3188
+    },
+    {
+      "slug": "medion-erazer-scout-e20-md62521",
+      "pageType": "page",
+      "bodyLength": 3303
+    },
+    {
+      "slug": "msi-katana-15-b12vgk-008nl",
+      "pageType": "page",
+      "bodyLength": 3201
+    },
+    {
+      "slug": "msi-katana-15-b13vek-010nl",
+      "pageType": "page",
+      "bodyLength": 3276
+    },
+    {
+      "slug": "msi-katana-15-b13vfk-012nl",
+      "pageType": "page",
+      "bodyLength": 3546
+    },
+    {
+      "slug": "msi-katana-17-b12vgk-013nl",
+      "pageType": "page",
+      "bodyLength": 3298
+    },
+    {
+      "slug": "msi-katana-17-b13vek-017nl",
+      "pageType": "page",
+      "bodyLength": 3218
+    },
+    {
+      "slug": "msi-katana-17-b13vfk-020nl",
+      "pageType": "page",
+      "bodyLength": 3297
+    },
+    {
+      "slug": "msi-katana-gf66-12ud-003nl",
+      "pageType": "page",
+      "bodyLength": 3222
+    },
+    {
+      "slug": "msi-katana-gf66-12ugszok-875nl",
+      "pageType": "page",
+      "bodyLength": 3269
+    },
+    {
+      "slug": "msi-katana-gf76-11sc-802nl",
+      "pageType": "page",
+      "bodyLength": 3267
+    },
+    {
+      "slug": "msi-katana-gf76-11uc-655nl",
+      "pageType": "page",
+      "bodyLength": 3300
+    },
+    {
+      "slug": "msi-mag-codex-5-13nud-1638mys",
+      "pageType": "page",
+      "bodyLength": 3110
+    },
+    {
+      "slug": "msi-mag-infinite-11tc-1252mys",
+      "pageType": "page",
+      "bodyLength": 3011
+    },
+    {
+      "slug": "msi-mag-infinite-s3-13nud-860mys",
+      "pageType": "page",
+      "bodyLength": 3178
+    },
+    {
+      "slug": "msi-mag-infinite-s3-13nud-861mys",
+      "pageType": "page",
+      "bodyLength": 3334
+    },
+    {
+      "slug": "msi-mag-infinite-s3-13nue-824mys",
+      "pageType": "page",
+      "bodyLength": 3191
+    },
+    {
+      "slug": "msi-mpg-infinite-x2-13fnue-094mys",
+      "pageType": "page",
+      "bodyLength": 3282
+    },
+    {
+      "slug": "msi-mpg-infinite-x2-13fnuf-091mys",
+      "pageType": "page",
+      "bodyLength": 3213
+    },
+    {
+      "slug": "msi-mpg-infinite-x2-13fnug-019eu",
+      "pageType": "page",
+      "bodyLength": 3195
+    },
+    {
+      "slug": "msi-mpg-infinite-x2-13fnug-093mys",
+      "pageType": "page",
+      "bodyLength": 3111
+    },
+    {
+      "slug": "msi-mpg-infinite-x2-13fnui-033mys",
+      "pageType": "page",
+      "bodyLength": 3089
+    },
+    {
+      "slug": "msi-pulse-17-b13vgk-600nl",
+      "pageType": "page",
+      "bodyLength": 3234
+    },
+    {
+      "slug": "msi-pulse-gl66-12uek-019nl",
+      "pageType": "page",
+      "bodyLength": 3130
+    },
+    {
+      "slug": "msi-pulse-gl66-12uek-496nl",
+      "pageType": "page",
+      "bodyLength": 3164
+    },
+    {
+      "slug": "msi-raider-ge78hx-13vh-254nl",
+      "pageType": "page",
+      "bodyLength": 3023
+    },
+    {
+      "slug": "msi-stealth-16-studio-a13vf-015nl",
+      "pageType": "page",
+      "bodyLength": 3285
+    },
+    {
+      "slug": "msi-stealth-16-studio-a13vg-014nl",
+      "pageType": "page",
+      "bodyLength": 3215
+    },
+    {
+      "slug": "msi-thin-gf63-11uc-453nl",
+      "pageType": "page",
+      "bodyLength": 3207
+    },
+    {
+      "slug": "msi-thin-gf63-11uc-455nl",
+      "pageType": "page",
+      "bodyLength": 3266
+    },
+    {
+      "slug": "msi-thin-gf63-12ve-012nl",
+      "pageType": "page",
+      "bodyLength": 3239
+    },
+    {
+      "slug": "msi-thin-gf63-12ve-014nl",
+      "pageType": "page",
+      "bodyLength": 3298
+    },
+    {
+      "slug": "msi-titan-gt77hx-13vi-009nl",
+      "pageType": "page",
+      "bodyLength": 3066
+    },
+    {
+      "slug": "msi-vector-gp66-12ugso-606nl",
+      "pageType": "page",
+      "bodyLength": 3119
+    },
+    {
+      "slug": "predator-orion-7000-650-i9k232gl",
+      "pageType": "page",
+      "bodyLength": 2844
+    },
+    {
+      "slug": "vermogen-van-ali-b",
+      "pageType": "review",
+      "bodyLength": 5307
+    },
+    {
+      "slug": "vermogen-van-ali-niknam",
+      "pageType": "review",
+      "bodyLength": 5403
+    },
+    {
+      "slug": "vermogen-van-alina-kabajeva",
+      "pageType": "review",
+      "bodyLength": 5550
+    },
+    {
+      "slug": "vermogen-van-andre-rieu",
+      "pageType": "review",
+      "bodyLength": 5406
+    },
+    {
+      "slug": "vermogen-van-aniek-van-koot",
+      "pageType": "review",
+      "bodyLength": 5566
+    },
+    {
+      "slug": "vermogen-van-anton-miranchuk",
+      "pageType": "review",
+      "bodyLength": 5631
+    },
+    {
+      "slug": "vermogen-van-antoon",
+      "pageType": "review",
+      "bodyLength": 5273
+    },
+    {
+      "slug": "vermogen-van-barry-hay",
+      "pageType": "review",
+      "bodyLength": 5369
+    },
+    {
+      "slug": "vermogen-van-barry-weiss",
+      "pageType": "review",
+      "bodyLength": 5435
+    },
+    {
+      "slug": "vermogen-van-bo-bendsneyder",
+      "pageType": "review",
+      "bodyLength": 5500
+    },
+    {
+      "slug": "vermogen-van-bo-kramer",
+      "pageType": "review",
+      "bodyLength": 5407
+    },
+    {
+      "slug": "vermogen-van-bo-wilkes",
+      "pageType": "review",
+      "bodyLength": 5368
+    },
+    {
+      "slug": "vermogen-van-bob-marley",
+      "pageType": "review",
+      "bodyLength": 5400
+    },
+    {
+      "slug": "vermogen-van-bouke-scholten",
+      "pageType": "review",
+      "bodyLength": 5503
+    },
+    {
+      "slug": "vermogen-van-bram-moszkowicz",
+      "pageType": "review",
+      "bodyLength": 5553
+    },
+    {
+      "slug": "vermogen-van-brandi-passante",
+      "pageType": "review",
+      "bodyLength": 5511
+    },
+    {
+      "slug": "vermogen-van-carlo-nasi",
+      "pageType": "review",
+      "bodyLength": 5374
+    },
+    {
+      "slug": "vermogen-van-carlos-alcaraz",
+      "pageType": "review",
+      "bodyLength": 5507
+    },
+    {
+      "slug": "vermogen-van-caroline-van-der-plas",
+      "pageType": "review",
+      "bodyLength": 5630
+    },
+    {
+      "slug": "vermogen-van-cees-engel",
+      "pageType": "review",
+      "bodyLength": 5372
+    },
+    {
+      "slug": "vermogen-van-chahid-charrak",
+      "pageType": "review",
+      "bodyLength": 5482
+    },
+    {
+      "slug": "vermogen-van-chantal-janzen",
+      "pageType": "review",
+      "bodyLength": 5568
+    },
+    {
+      "slug": "vermogen-van-chester-bennington",
+      "pageType": "review",
+      "bodyLength": 5696
+    },
+    {
+      "slug": "vermogen-van-chris-woerts",
+      "pageType": "review",
+      "bodyLength": 5416
+    },
+    {
+      "slug": "vermogen-van-chuba-akpom",
+      "pageType": "review",
+      "bodyLength": 5438
+    },
+    {
+      "slug": "vermogen-van-clarence-seedorf",
+      "pageType": "review",
+      "bodyLength": 5539
+    },
+    {
+      "slug": "vermogen-van-daniel-de-blok",
+      "pageType": "review",
+      "bodyLength": 5470
+    },
+    {
+      "slug": "vermogen-van-danny-de-munk",
+      "pageType": "review",
+      "bodyLength": 5475
+    },
+    {
+      "slug": "vermogen-van-dave-bautista",
+      "pageType": "review",
+      "bodyLength": 5619
+    },
+    {
+      "slug": "vermogen-van-dave-roelvink",
+      "pageType": "review",
+      "bodyLength": 5441
+    },
+    {
+      "slug": "vermogen-van-davy-klaassen",
+      "pageType": "review",
+      "bodyLength": 5496
+    },
+    {
+      "slug": "vermogen-van-denzel-dumfries",
+      "pageType": "review",
+      "bodyLength": 5644
+    },
+    {
+      "slug": "vermogen-van-djamila-celina",
+      "pageType": "review",
+      "bodyLength": 5478
+    },
+    {
+      "slug": "vermogen-van-dominique-pelicot",
+      "pageType": "review",
+      "bodyLength": 5564
+    },
+    {
+      "slug": "vermogen-van-doutzen-kroes",
+      "pageType": "review",
+      "bodyLength": 5461
+    },
+    {
+      "slug": "vermogen-van-dries-roelvink",
+      "pageType": "review",
+      "bodyLength": 5499
+    },
+    {
+      "slug": "vermogen-van-edward-planckaert",
+      "pageType": "review",
+      "bodyLength": 5557
+    },
+    {
+      "slug": "vermogen-van-elena-congost",
+      "pageType": "review",
+      "bodyLength": 5573
+    },
+    {
+      "slug": "vermogen-van-erik-ten-hag",
+      "pageType": "review",
+      "bodyLength": 5442
+    },
+    {
+      "slug": "vermogen-van-evert-ten-napel",
+      "pageType": "review",
+      "bodyLength": 5600
+    },
+    {
+      "slug": "vermogen-van-ewout-genemans",
+      "pageType": "review",
+      "bodyLength": 5532
+    },
+    {
+      "slug": "vermogen-van-filip-kostic",
+      "pageType": "review",
+      "bodyLength": 5470
+    },
+    {
+      "slug": "vermogen-van-gerard-butler",
+      "pageType": "review",
+      "bodyLength": 5563
+    },
+    {
+      "slug": "vermogen-van-gerrit-malipaard",
+      "pageType": "review",
+      "bodyLength": 5563
+    },
+    {
+      "slug": "vermogen-van-gert-verhulst",
+      "pageType": "review",
+      "bodyLength": 5471
+    },
+    {
+      "slug": "vermogen-van-gisele-pelicot",
+      "pageType": "review",
+      "bodyLength": 5486
+    },
+    {
+      "slug": "vermogen-van-glennis-grace",
+      "pageType": "review",
+      "bodyLength": 5495
+    },
+    {
+      "slug": "vermogen-van-halina-reijn",
+      "pageType": "review",
+      "bodyLength": 5538
+    },
+    {
+      "slug": "vermogen-van-hannah-hoekstra",
+      "pageType": "review",
+      "bodyLength": 5530
+    },
+    {
+      "slug": "vermogen-van-hein-de-haas",
+      "pageType": "review",
+      "bodyLength": 5502
+    },
+    {
+      "slug": "vermogen-van-hella-huizinga",
+      "pageType": "review",
+      "bodyLength": 5482
+    },
+    {
+      "slug": "vermogen-van-hugo-borst",
+      "pageType": "review",
+      "bodyLength": 5430
+    },
+    {
+      "slug": "vermogen-van-humberto-tan",
+      "pageType": "review",
+      "bodyLength": 5466
+    },
+    {
+      "slug": "vermogen-van-huub-kortekaas",
+      "pageType": "review",
+      "bodyLength": 5543
+    },
+    {
+      "slug": "vermogen-van-inez-weski",
+      "pageType": "review",
+      "bodyLength": 5393
+    },
+    {
+      "slug": "vermogen-van-ivo-daalder",
+      "pageType": "review",
+      "bodyLength": 5501
+    },
+    {
+      "slug": "vermogen-van-jack-draper",
+      "pageType": "review",
+      "bodyLength": 5430
+    },
+    {
+      "slug": "vermogen-van-jai-evans",
+      "pageType": "review",
+      "bodyLength": 5398
+    },
+    {
+      "slug": "vermogen-van-james-taylor",
+      "pageType": "review",
+      "bodyLength": 5480
+    },
+    {
+      "slug": "vermogen-van-janice-blok",
+      "pageType": "review",
+      "bodyLength": 5427
+    },
+    {
+      "slug": "vermogen-van-jared-isaacman",
+      "pageType": "review",
+      "bodyLength": 5592
+    },
+    {
+      "slug": "vermogen-van-jerdy-schouten",
+      "pageType": "review",
+      "bodyLength": 5498
+    },
+    {
+      "slug": "vermogen-van-jeremain-lens",
+      "pageType": "review",
+      "bodyLength": 5522
+    },
+    {
+      "slug": "vermogen-van-jetze-plat",
+      "pageType": "review",
+      "bodyLength": 5461
+    },
+    {
+      "slug": "vermogen-van-johan-de-witt",
+      "pageType": "review",
+      "bodyLength": 5560
+    },
+    {
+      "slug": "vermogen-van-johnny-heitinga",
+      "pageType": "review",
+      "bodyLength": 5508
+    },
+    {
+      "slug": "vermogen-van-jurrien-timber",
+      "pageType": "review",
+      "bodyLength": 5497
+    },
+    {
+      "slug": "vermogen-van-justin-kluivert",
+      "pageType": "review",
+      "bodyLength": 5609
+    },
+    {
+      "slug": "vermogen-van-jutta-leerdam",
+      "pageType": "review",
+      "bodyLength": 5473
+    },
+    {
+      "slug": "vermogen-van-kai-havertz",
+      "pageType": "review",
+      "bodyLength": 5418
+    },
+    {
+      "slug": "vermogen-van-karel-gerlach",
+      "pageType": "review",
+      "bodyLength": 5438
+    },
+    {
+      "slug": "vermogen-van-karsten-warholm",
+      "pageType": "review",
+      "bodyLength": 5490
+    },
+    {
+      "slug": "vermogen-van-kendrick-lamar",
+      "pageType": "review",
+      "bodyLength": 5594
+    },
+    {
+      "slug": "vermogen-van-kerem-akturkoglu",
+      "pageType": "review",
+      "bodyLength": 5514
+    },
+    {
+      "slug": "vermogen-van-kimmylien-nguyen",
+      "pageType": "review",
+      "bodyLength": 5521
+    },
+    {
+      "slug": "vermogen-van-koning-willem-alexander",
+      "pageType": "review",
+      "bodyLength": 5692
+    },
+    {
+      "slug": "vermogen-van-koningin-maxima",
+      "pageType": "review",
+      "bodyLength": 5491
+    },
+    {
+      "slug": "vermogen-van-lance-stroll",
+      "pageType": "review",
+      "bodyLength": 5461
+    },
+    {
+      "slug": "vermogen-van-lara-baars",
+      "pageType": "review",
+      "bodyLength": 5406
+    },
+    {
+      "slug": "vermogen-van-lijpe",
+      "pageType": "review",
+      "bodyLength": 5320
+    },
+    {
+      "slug": "vermogen-van-lilian-marijnissen",
+      "pageType": "review",
+      "bodyLength": 5533
+    },
+    {
+      "slug": "vermogen-van-lisa-kruger",
+      "pageType": "review",
+      "bodyLength": 5640
+    },
+    {
+      "slug": "vermogen-van-lotte-van-drunen",
+      "pageType": "review",
+      "bodyLength": 5558
+    },
+    {
+      "slug": "vermogen-van-luis-suarez",
+      "pageType": "review",
+      "bodyLength": 5494
+    },
+    {
+      "slug": "vermogen-van-luka-modric",
+      "pageType": "review",
+      "bodyLength": 5423
+    },
+    {
+      "slug": "vermogen-van-luuk-de-jong",
+      "pageType": "review",
+      "bodyLength": 5567
+    },
+    {
+      "slug": "vermogen-van-maan",
+      "pageType": "review",
+      "bodyLength": 5248
+    },
+    {
+      "slug": "vermogen-van-maartje-van-weegen",
+      "pageType": "review",
+      "bodyLength": 5657
+    },
+    {
+      "slug": "vermogen-van-maria-tailor",
+      "pageType": "review",
+      "bodyLength": 5438
+    },
+    {
+      "slug": "vermogen-van-marieke-van-soest",
+      "pageType": "review",
+      "bodyLength": 5682
+    },
+    {
+      "slug": "vermogen-van-mark-baanders",
+      "pageType": "review",
+      "bodyLength": 5579
+    },
+    {
+      "slug": "vermogen-van-mark-van-der-maarel",
+      "pageType": "review",
+      "bodyLength": 5741
+    },
+    {
+      "slug": "vermogen-van-mark-wahlberg",
+      "pageType": "review",
+      "bodyLength": 5490
+    },
+    {
+      "slug": "vermogen-van-mart-hoogkamer",
+      "pageType": "review",
+      "bodyLength": 5492
+    },
+    {
+      "slug": "vermogen-van-martine-van-os",
+      "pageType": "review",
+      "bodyLength": 5510
+    },
+    {
+      "slug": "vermogen-van-maurizio-marinella",
+      "pageType": "review",
+      "bodyLength": 5669
+    },
+    {
+      "slug": "vermogen-van-max-westerman",
+      "pageType": "review",
+      "bodyLength": 5525
+    },
+    {
+      "slug": "vermogen-van-mees-hilgers",
+      "pageType": "review",
+      "bodyLength": 5473
+    },
+    {
+      "slug": "vermogen-van-michael-jordan",
+      "pageType": "review",
+      "bodyLength": 5499
+    },
+    {
+      "slug": "vermogen-van-michael-polansky",
+      "pageType": "review",
+      "bodyLength": 5615
+    },
+    {
+      "slug": "vermogen-van-michella-kox",
+      "pageType": "review",
+      "bodyLength": 5458
+    },
+    {
+      "slug": "vermogen-van-michelle-pfeiffer",
+      "pageType": "review",
+      "bodyLength": 5639
+    },
+    {
+      "slug": "vermogen-van-milambo",
+      "pageType": "review",
+      "bodyLength": 5341
+    },
+    {
+      "slug": "vermogen-van-mo-ihattaren",
+      "pageType": "review",
+      "bodyLength": 5451
+    },
+    {
+      "slug": "vermogen-van-montana-meiland",
+      "pageType": "review",
+      "bodyLength": 5529
+    },
+    {
+      "slug": "vermogen-van-nicol-kremers",
+      "pageType": "review",
+      "bodyLength": 5460
+    },
+    {
+      "slug": "vermogen-van-niels-vink",
+      "pageType": "review",
+      "bodyLength": 5462
+    },
+    {
+      "slug": "vermogen-van-olcay-gulsen",
+      "pageType": "review",
+      "bodyLength": 5468
+    },
+    {
+      "slug": "vermogen-van-olivier-van-de-voort",
+      "pageType": "review",
+      "bodyLength": 5721
+    },
+    {
+      "slug": "vermogen-van-paolo-rossi",
+      "pageType": "review",
+      "bodyLength": 5421
+    },
+    {
+      "slug": "vermogen-van-puck-moonen",
+      "pageType": "review",
+      "bodyLength": 5433
+    },
+    {
+      "slug": "vermogen-van-raymond-mens",
+      "pageType": "review",
+      "bodyLength": 5500
+    },
+    {
+      "slug": "vermogen-van-raymond-thiry",
+      "pageType": "review",
+      "bodyLength": 5469
+    },
+    {
+      "slug": "vermogen-van-rebecca-cheptegei",
+      "pageType": "review",
+      "bodyLength": 5594
+    },
+    {
+      "slug": "vermogen-van-reinier-zonneveld",
+      "pageType": "review",
+      "bodyLength": 5571
+    },
+    {
+      "slug": "vermogen-van-rikkie-kolle",
+      "pageType": "review",
+      "bodyLength": 5511
+    },
+    {
+      "slug": "vermogen-van-robbert-kroese",
+      "pageType": "review",
+      "bodyLength": 5502
+    },
+    {
+      "slug": "vermogen-van-robert-gesink",
+      "pageType": "review",
+      "bodyLength": 5434
+    },
+    {
+      "slug": "vermogen-van-robert-plant",
+      "pageType": "review",
+      "bodyLength": 5483
+    },
+    {
+      "slug": "vermogen-van-robert-tammens",
+      "pageType": "review",
+      "bodyLength": 5540
+    },
+    {
+      "slug": "vermogen-van-romee-strijd",
+      "pageType": "review",
+      "bodyLength": 5431
+    },
+    {
+      "slug": "vermogen-van-ronald-koeman",
+      "pageType": "review",
+      "bodyLength": 5472
+    },
+    {
+      "slug": "vermogen-van-roxy-dekker",
+      "pageType": "review",
+      "bodyLength": 5482
+    },
+    {
+      "slug": "vermogen-van-ruben-brekelmans",
+      "pageType": "review",
+      "bodyLength": 5587
+    },
+    {
+      "slug": "vermogen-van-ruben-nicolai",
+      "pageType": "review",
+      "bodyLength": 5574
+    },
+    {
+      "slug": "vermogen-van-sander-schimmelpenninck",
+      "pageType": "review",
+      "bodyLength": 5725
+    },
+    {
+      "slug": "vermogen-van-sarina-wiegman",
+      "pageType": "review",
+      "bodyLength": 5527
+    },
+    {
+      "slug": "vermogen-van-sergio-mendes",
+      "pageType": "review",
+      "bodyLength": 5444
+    },
+    {
+      "slug": "vermogen-van-sharon-van-rouwendaal",
+      "pageType": "review",
+      "bodyLength": 5639
+    },
+    {
+      "slug": "vermogen-van-sheila-bergeik",
+      "pageType": "review",
+      "bodyLength": 5474
+    },
+    {
+      "slug": "vermogen-van-sigrid-kaag",
+      "pageType": "review",
+      "bodyLength": 5399
+    },
+    {
+      "slug": "vermogen-van-silvio-almeida",
+      "pageType": "review",
+      "bodyLength": 5601
+    },
+    {
+      "slug": "vermogen-van-sunnery-james",
+      "pageType": "review",
+      "bodyLength": 5444
+    },
+    {
+      "slug": "vermogen-van-susanna-klibansky",
+      "pageType": "review",
+      "bodyLength": 5521
+    },
+    {
+      "slug": "vermogen-van-sven-kramer",
+      "pageType": "review",
+      "bodyLength": 5622
+    },
+    {
+      "slug": "vermogen-van-sylvia-geersen",
+      "pageType": "review",
+      "bodyLength": 5482
+    },
+    {
+      "slug": "vermogen-van-tina-nijkamp",
+      "pageType": "review",
+      "bodyLength": 5448
+    },
+    {
+      "slug": "vermogen-van-tom-egbers",
+      "pageType": "review",
+      "bodyLength": 5415
+    },
+    {
+      "slug": "vermogen-van-toni-kroos",
+      "pageType": "review",
+      "bodyLength": 5407
+    },
+    {
+      "slug": "vermogen-van-trevor-noah",
+      "pageType": "review",
+      "bodyLength": 5461
+    },
+    {
+      "slug": "vermogen-van-umut-nayir",
+      "pageType": "review",
+      "bodyLength": 5454
+    },
+    {
+      "slug": "vermogen-van-vincent-karremans",
+      "pageType": "review",
+      "bodyLength": 5657
+    },
+    {
+      "slug": "vermogen-van-welmoed-sijtsma",
+      "pageType": "review",
+      "bodyLength": 5600
+    },
+    {
+      "slug": "vermogen-van-wim-kieft",
+      "pageType": "review",
+      "bodyLength": 5556
+    },
+    {
+      "slug": "vermogen-van-wobke-hoekstra",
+      "pageType": "review",
+      "bodyLength": 5494
+    },
+    {
+      "slug": "vermogen-van-xavi-simons",
+      "pageType": "review",
+      "bodyLength": 5526
+    },
+    {
+      "slug": "vermogen-van-youri-regeer",
+      "pageType": "review",
+      "bodyLength": 5465
+    },
+    {
+      "slug": "avatar-the-way-of-water--streamen",
+      "pageType": "stream",
+      "bodyLength": 32626
+    },
+    {
+      "slug": "barbie-streamen",
+      "pageType": "stream",
+      "bodyLength": 32185
+    },
+    {
+      "slug": "call-the-midwife-streamen",
+      "pageType": "stream",
+      "bodyLength": 32413
+    },
+    {
+      "slug": "despicable-me-streamen",
+      "pageType": "stream",
+      "bodyLength": 32404
+    },
+    {
+      "slug": "doctor-who-streamen",
+      "pageType": "stream",
+      "bodyLength": 32276
+    },
+    {
+      "slug": "dune-streamen",
+      "pageType": "stream",
+      "bodyLength": 32105
+    },
+    {
+      "slug": "friends-streamen",
+      "pageType": "stream",
+      "bodyLength": 32206
+    },
+    {
+      "slug": "grease-streamen",
+      "pageType": "stream",
+      "bodyLength": 32210
+    },
+    {
+      "slug": "gremlins-2-the-new-batch-streamen",
+      "pageType": "stream",
+      "bodyLength": 32588
+    },
+    {
+      "slug": "harry-potter-and-the-philosopher-s-stone-streamen",
+      "pageType": "stream",
+      "bodyLength": 32973
+    },
+    {
+      "slug": "horatio-hornblower-the-duel-streamen",
+      "pageType": "stream",
+      "bodyLength": 32651
+    },
+    {
+      "slug": "john-wick-4-streamen",
+      "pageType": "stream",
+      "bodyLength": 32310
+    },
+    {
+      "slug": "love-actually-streamen",
+      "pageType": "stream",
+      "bodyLength": 32267
+    },
+    {
+      "slug": "mamma-mia-streamen",
+      "pageType": "stream",
+      "bodyLength": 32225
+    },
+    {
+      "slug": "mcleod-s-daughters-streamen",
+      "pageType": "stream",
+      "bodyLength": 32491
+    },
+    {
+      "slug": "minions-streamen",
+      "pageType": "stream",
+      "bodyLength": 32336
+    },
+    {
+      "slug": "modern-family-streamen",
+      "pageType": "stream",
+      "bodyLength": 32405
+    },
+    {
+      "slug": "ncis-streamen",
+      "pageType": "stream",
+      "bodyLength": 32197
+    },
+    {
+      "slug": "ome-cor-streamen",
+      "pageType": "stream",
+      "bodyLength": 32230
+    },
+    {
+      "slug": "sonic-the-hedgehog-2-streamen",
+      "pageType": "stream",
+      "bodyLength": 32575
+    },
+    {
+      "slug": "south-park-streamen",
+      "pageType": "stream",
+      "bodyLength": 32161
+    },
+    {
+      "slug": "super-mario-bros-the-movie-streamen",
+      "pageType": "stream",
+      "bodyLength": 32653
+    },
+    {
+      "slug": "the-hobbit-an-unexpected-journey-streamen",
+      "pageType": "stream",
+      "bodyLength": 32809
+    },
+    {
+      "slug": "the-ice-age-adventures-of-buck-wild-streamen",
+      "pageType": "stream",
+      "bodyLength": 32906
+    },
+    {
+      "slug": "the-intouchables-streamen",
+      "pageType": "stream",
+      "bodyLength": 32446
+    },
+    {
+      "slug": "the-whale-streamen",
+      "pageType": "stream",
+      "bodyLength": 32172
+    },
+    {
+      "slug": "titanic-streamen",
+      "pageType": "stream",
+      "bodyLength": 32150
+    },
+    {
+      "slug": "twilight-streamen",
+      "pageType": "stream",
+      "bodyLength": 32203
+    },
+    {
+      "slug": "yellowstone-streamen",
+      "pageType": "stream",
+      "bodyLength": 32202
+    }
+  ],
+  "errors": []
+}

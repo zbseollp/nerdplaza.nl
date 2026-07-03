@@ -1,0 +1,66 @@
+---
+import { getCollection } from 'astro:content';
+import BlogCard from './BlogCard.astro';
+
+interface Props {
+  limit?: number;
+  showHeader?: boolean;
+}
+
+const { limit = 8, showHeader = true } = Astro.props;
+
+const posts = (await getCollection('blog'))
+  .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
+  .slice(0, limit);
+---
+
+<section class="blog-posts section">
+  <div class="container">
+    {
+      showHeader && (
+        <div class="blog-posts-header">
+          <h2 class="section-heading">Blog Posts</h2>
+          <p class="section-subtitle">Lees hier de laatste blog posts.</p>
+        </div>
+      )
+    }
+
+    <div class="blog-posts-grid">
+      {posts.map((post) => <BlogCard post={post} />)}
+    </div>
+
+    <div class="blog-posts-action">
+      <a href="/blog/" class="btn">Alle blog posts</a>
+    </div>
+  </div>
+</section>
+
+<style>
+  .blog-posts-header {
+    margin-bottom: clamp(2rem, 4vw, 3rem);
+  }
+
+  .blog-posts-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2.25rem clamp(1rem, 2vw, 2rem);
+  }
+
+  .blog-posts-action {
+    display: flex;
+    justify-content: center;
+    margin-top: 2.5rem;
+  }
+
+  @media (max-width: 1023px) {
+    .blog-posts-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (max-width: 599px) {
+    .blog-posts-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

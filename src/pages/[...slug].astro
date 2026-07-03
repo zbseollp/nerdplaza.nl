@@ -1,0 +1,50 @@
+---
+import { getCollection, render } from 'astro:content';
+import BlogPostLayout from '../layouts/BlogPostLayout.astro';
+import PageLayout from '../layouts/PageLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+
+export async function getStaticPaths() {
+  const blogEntries = await getCollection('blog');
+  const pageEntries = await getCollection('pages');
+
+  const blogPaths = blogEntries.map((entry) => ({
+    params: { slug: entry.id },
+    props: { type: 'blog' as const, entry },
+  }));
+
+  const pagePaths = pageEntries
+    .filter((entry) => entry.id !== 'sitemap')
+    .map((entry) => ({
+      params: { slug: entry.id },
+      props: { type: 'page' as const, entry },
+    }));
+
+  return [...blogPaths, ...pagePaths];
+}
+
+const { type, entry } = Astro.props;
+const currentPath = `/${entry.id}/`;
+
+let BlogContent: Awaited<ReturnType<typeof render>>['Content'] | null = null;
+if (type === 'blog') {
+  ({ Content: BlogContent } = await render(entry));
+}
+---
+
+{
+  type === 'blog' ? (
+    <BlogPostLayout entry={entry}>
+      <Header slot="header" currentPath={currentPath} />
+      <BlogContent />
+      <Footer slot="footer" />
+    </BlogPostLayout>
+  ) : (
+    <PageLayout entry={entry}>
+      <Header slot="header" currentPath={currentPath} />
+      <div class="page-html-content" set:html={entry.body} />
+      <Footer slot="footer" />
+    </PageLayout>
+  )
+}

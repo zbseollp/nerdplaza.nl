@@ -1,0 +1,489 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import BaseLayout from './BaseLayout.astro';
+import Sidebar from '../components/Sidebar.astro';
+
+interface Props {
+  entry: CollectionEntry<'pages'>;
+}
+
+const { entry } = Astro.props;
+const { title, description, pubDate, featuredImage, pageType } = entry.data;
+
+const formattedDate = pubDate.toLocaleDateString('nl-NL', {
+  year: 'numeric',
+  month: 'long',
+  day: 'numeric',
+});
+
+const pageUrl = `/${entry.id}/`;
+const layoutClass = pageType ? `page-type-${pageType}` : 'page-type-page';
+const showDate = pageType !== 'review' && pageType !== 'stream';
+const pageSlugClass = `page-slug-${entry.id.replace(/[^a-z0-9-]/gi, '-')}`;
+---
+
+<BaseLayout title={title} description={description} canonical={new URL(pageUrl, Astro.site).href}>
+  <slot name="header" slot="header" />
+  <article class={`page-content section ${layoutClass} ${pageSlugClass}`}>
+    <div class="container page-content-grid">
+      <div class="page-content-main">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <ol>
+            <li><a href="/">Home</a></li>
+            <li aria-hidden="true">/</li>
+            {pageType === 'category' && (
+              <>
+                <li><a href="/sitemap/">Sitemap</a></li>
+                <li aria-hidden="true">/</li>
+              </>
+            )}
+            <li aria-current="page">{title.replace(/ - nerdplaza\.nl$/i, '')}</li>
+          </ol>
+        </nav>
+
+        <header class="page-content-header">
+          <h1>{title.replace(/ - nerdplaza\.nl$/i, '')}</h1>
+          {
+            showDate && (
+              <time class="page-content-date" datetime={pubDate.toISOString()}>{formattedDate}</time>
+            )
+          }
+        </header>
+
+        {
+          featuredImage && (
+            <figure class="page-content-image">
+              <img src={featuredImage} alt={title} width="960" height="540" loading="eager" decoding="async" />
+            </figure>
+          )
+        }
+
+        <div class="page-content-body prose">
+          <slot />
+        </div>
+      </div>
+
+      <Sidebar currentSlug={entry.id} />
+    </div>
+  </article>
+  <slot name="footer" slot="footer" />
+</BaseLayout>
+
+<style>
+  .page-content-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 2fr) minmax(260px, 1fr);
+    gap: clamp(2rem, 4vw, 3.5rem);
+    align-items: start;
+  }
+
+  @media (max-width: 960px) {
+    .page-content-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .breadcrumb ol {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+    font-size: 0.875rem;
+    color: var(--color-text-muted);
+  }
+
+  .breadcrumb a:hover {
+    color: var(--color-accent);
+  }
+
+  .page-content-header {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    margin-bottom: 2rem;
+  }
+
+  .page-content-date {
+    font-size: 0.875rem;
+    color: var(--color-text-muted);
+  }
+
+  .page-content-image {
+    margin: 0 0 2rem;
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    aspect-ratio: 16 / 10;
+    background: var(--color-bg-dark);
+  }
+
+  .page-content-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .page-content-body :global(h2),
+  .page-content-body :global(h3),
+  .page-content-body :global(h4),
+  .page-content-body :global(h5) {
+    margin-top: 2rem;
+    margin-bottom: 0.75rem;
+    color: var(--color-text);
+  }
+
+  .page-content-body :global(p) {
+    margin-bottom: 1.25rem;
+    color: var(--color-text-muted);
+    line-height: 1.75;
+  }
+
+  .page-content-body :global(a) {
+    color: var(--color-accent);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+  }
+
+  .page-content-body :global(a:hover) {
+    color: var(--color-accent-hover);
+  }
+
+  .page-content-body :global(img) {
+    max-width: 100%;
+    height: auto;
+    border-radius: var(--radius-sm);
+    margin: 1rem 0;
+  }
+
+  .page-content-body :global(ul),
+  .page-content-body :global(ol) {
+    margin-bottom: 1.25rem;
+    padding-left: 1.25rem;
+    color: var(--color-text-muted);
+  }
+
+  .page-content-body :global(li) {
+    margin-bottom: 0.35rem;
+  }
+
+  /* Category link grids */
+  .page-type-category :global(.zbmp-category-links) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem 2rem;
+    margin-top: 1.5rem;
+  }
+
+  .page-type-category :global(.zbmp-category-links .alpha-group) {
+    min-width: 180px;
+    flex: 1 1 180px;
+  }
+
+  .page-type-category :global(.zbmp-category-links h5) {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--color-accent);
+    margin-bottom: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+  }
+
+  .page-type-category :global(.zbmp-category-links ul) {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .page-type-category :global(.zbmp-category-links li) {
+    margin-bottom: 0.5rem;
+  }
+
+  .page-type-category :global(.zbmp-category-links a) {
+    text-decoration: none;
+    color: var(--color-text-muted);
+    font-size: 0.9375rem;
+  }
+
+  .page-type-category :global(.zbmp-category-links a:hover) {
+    color: var(--color-accent);
+  }
+
+  /* Product review cards */
+  .page-type-review :global(.product-reviews),
+  .page-type-stream :global(.product-reviews) {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 2rem;
+  }
+
+  .page-type-review :global(.product-card),
+  .page-type-stream :global(.product-card) {
+    display: grid;
+    grid-template-columns: minmax(140px, 220px) minmax(0, 1fr);
+    gap: 1.5rem;
+    align-items: start;
+    padding: 1.25rem;
+    background: var(--color-bg-elevated);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+  }
+
+  @media (max-width: 768px) {
+    .page-type-review :global(.product-card),
+    .page-type-stream :global(.product-card) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .page-type-review :global(.product-card-media),
+  .page-type-stream :global(.product-card-media) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.75rem;
+    background: var(--color-bg);
+    border-radius: var(--radius-sm);
+    border: 1px solid var(--color-border);
+    min-height: 180px;
+  }
+
+  .page-type-review :global(.product-card-media img),
+  .page-type-stream :global(.product-card-media img) {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    max-height: 220px;
+    object-fit: contain;
+    margin: 0;
+    border-radius: var(--radius-sm);
+  }
+
+  .page-type-review :global(.product-card-body),
+  .page-type-stream :global(.product-card-body) {
+    display: flex;
+    flex-direction: column;
+    gap: 0.875rem;
+  }
+
+  .page-type-review :global(.product-card-body h2),
+  .page-type-stream :global(.product-card-body h2) {
+    margin: 0;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--color-text);
+  }
+
+  .page-type-review :global(.product-card-desc),
+  .page-type-stream :global(.product-card-desc) {
+    color: var(--color-text-muted);
+    line-height: 1.7;
+    font-size: 0.9375rem;
+  }
+
+  .page-type-review :global(.product-card-desc p),
+  .page-type-stream :global(.product-card-desc p) {
+    margin: 0 0 0.75rem;
+  }
+
+  .page-type-review :global(.product-card-desc p:last-child),
+  .page-type-stream :global(.product-card-desc p:last-child) {
+    margin-bottom: 0;
+  }
+
+  .page-type-review :global(.product-card-btn),
+  .page-type-stream :global(.product-card-btn) {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    align-self: flex-start;
+    padding: 0.75rem 1.25rem;
+    border-radius: var(--radius-sm);
+    background: var(--color-accent);
+    color: #fff !important;
+    font-weight: 600;
+    font-size: 0.875rem;
+    text-decoration: none !important;
+    transition: background var(--transition);
+  }
+
+  .page-type-review :global(.product-card-btn:hover),
+  .page-type-stream :global(.product-card-btn:hover) {
+    background: var(--color-accent-hover);
+  }
+
+  /* Legacy elementor fallback (should not appear after normalize) */
+  .page-type-review :global(.elementor-button-wrapper),
+  .page-type-stream :global(.elementor-button-wrapper) {
+    margin: 1rem 0 2rem;
+  }
+
+  .page-type-review :global(.elementor-button),
+  .page-type-stream :global(.elementor-button) {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.75rem 1.5rem;
+    border-radius: var(--radius-sm);
+    background: var(--color-accent);
+    color: #fff !important;
+    font-weight: 600;
+    text-decoration: none !important;
+    transition: background var(--transition);
+  }
+
+  .page-type-review :global(.elementor-divider),
+  .page-type-stream :global(.elementor-divider) {
+    display: none;
+  }
+
+  .page-type-review :global(.elementor-inner-section .elementor-container),
+  .page-type-stream :global(.elementor-inner-section .elementor-container) {
+    display: grid;
+    grid-template-columns: minmax(140px, 220px) minmax(0, 1fr);
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  @media (max-width: 768px) {
+    .page-type-review :global(.elementor-inner-section .elementor-container),
+    .page-type-stream :global(.elementor-inner-section .elementor-container) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .page-type-review :global(.elementor-col-50),
+  .page-type-stream :global(.elementor-col-50) {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .page-type-review :global(.elementor-widget-wrap),
+  .page-type-stream :global(.elementor-widget-wrap) {
+    padding: 0;
+    border: none;
+    background: transparent;
+  }
+
+  .page-type-review :global(.elementor-heading-title img),
+  .page-type-stream :global(.elementor-heading-title img) {
+    max-height: 200px;
+    width: auto;
+    max-width: 100%;
+    margin: 0 auto;
+    display: block;
+    object-fit: contain;
+  }
+
+  .page-type-review :global(.page-content-body > p:first-of-type),
+  .page-type-stream :global(.page-content-body > p:first-of-type) {
+    padding: 0.875rem 1rem;
+    border-left: 3px solid var(--color-accent);
+    background: rgba(214, 82, 248, 0.06);
+    border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+    color: var(--color-text);
+  }
+
+  .page-type-stream :global(table) {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.5rem 0;
+    font-size: 0.9375rem;
+  }
+
+  .page-type-stream :global(table td),
+  .page-type-stream :global(table th) {
+    padding: 0.625rem 0.875rem;
+    border: 1px solid var(--color-border);
+    vertical-align: top;
+  }
+
+  .page-type-stream :global(table tr:nth-child(even)) {
+    background: rgba(255, 255, 255, 0.02);
+  }
+
+  .page-type-stream :global(h2.elementor-heading-title) {
+    font-size: 1.35rem;
+    margin-top: 2rem;
+  }
+
+  /* Remove scraped chat UI wrappers */
+  .page-content-body :global(.flex.max-w-full),
+  .page-content-body :global(.markdown.prose),
+  .page-content-body :global(.text-message) {
+    display: contents;
+  }
+
+  /* Links page */
+  .page-slug-links :global(.page-content-body p) {
+    margin-bottom: 0.75rem;
+  }
+
+  .page-slug-links :global(.page-content-body) {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 0.75rem;
+  }
+
+  .page-slug-links :global(.page-content-body p) {
+    margin: 0;
+  }
+
+  .page-slug-links :global(.page-content-body a) {
+    display: block;
+    padding: 0.875rem 1rem;
+    text-decoration: none;
+    color: var(--color-text-muted);
+    background: var(--color-bg-elevated);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-sm);
+    transition: border-color var(--transition), color var(--transition), transform var(--transition);
+  }
+
+  .page-slug-links :global(.page-content-body a:hover) {
+    color: var(--color-text);
+    border-color: var(--color-accent);
+    transform: translateY(-1px);
+  }
+
+  /* Sitemap-style lists inside pages */
+  .page-content-body :global(.wsp-container) {
+    width: 100%;
+  }
+
+  .page-content-body :global(.wsp-pages-list),
+  .page-content-body :global(.wsp-posts-list) {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 0.625rem 1.25rem;
+    list-style: none;
+    padding: 0;
+    margin: 0 0 2rem;
+  }
+
+  .page-content-body :global(.wsp-pages-title),
+  .page-content-body :global(.wsp-posts-title) {
+    grid-column: 1 / -1;
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin: 2rem 0 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--color-accent);
+  }
+
+  .page-content-body :global(.wsp-pages-list a),
+  .page-content-body :global(.wsp-posts-list a) {
+    display: block;
+    padding: 0.625rem 0.875rem;
+    text-decoration: none;
+    color: var(--color-text-muted);
+    background: rgba(255, 255, 255, 0.02);
+    border-radius: var(--radius-sm);
+    transition: color var(--transition), background var(--transition);
+  }
+
+  .page-content-body :global(.wsp-pages-list a:hover),
+  .page-content-body :global(.wsp-posts-list a:hover) {
+    color: var(--color-accent);
+    background: rgba(214, 82, 248, 0.08);
+  }
+</style>

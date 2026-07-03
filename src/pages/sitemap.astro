@@ -1,0 +1,402 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+
+const pages = (await getCollection('pages')).sort((a, b) => a.data.title.localeCompare(b.data.title, 'nl'));
+const blogPosts = (await getCollection('blog')).sort(
+  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
+);
+
+const CATEGORY_SLUGS = new Set([
+  'gamen',
+  'kantoorartikelen',
+  'muziek',
+  'wearables',
+  'drones',
+  'televisies',
+  'streamen',
+  'vermogen',
+]);
+
+const sitePages = pages
+  .filter((p) => p.data.pageType === 'category' || p.id === 'links')
+  .sort((a, b) => a.data.title.localeCompare(b.data.title, 'nl'));
+
+const reviews = pages.filter(
+  (p) => p.data.pageType === 'review' && !p.id.startsWith('vermogen-van-') && !p.id.startsWith('zb_mp'),
+);
+
+const vermogenPages = pages.filter((p) => p.id.startsWith('vermogen-van-'));
+
+const streamPages = pages.filter(
+  (p) => p.data.pageType === 'stream' && !p.id.startsWith('zb_mp'),
+);
+
+const blogByCategory = blogPosts.reduce<Record<string, typeof blogPosts>>((acc, post) => {
+  const cats = post.data.categories?.length ? post.data.categories : ['Blog'];
+  for (const cat of cats) {
+    if (!acc[cat]) acc[cat] = [];
+    acc[cat].push(post);
+  }
+  return acc;
+}, {});
+
+const sections = [
+  { id: 'paginas', label: "Pagina's", count: sitePages.length + 2 },
+  { id: 'reviews', label: 'Product reviews', count: reviews.length },
+  { id: 'streamen', label: 'Streamen', count: streamPages.length },
+  { id: 'vermogen', label: 'Vermogen', count: vermogenPages.length },
+  { id: 'blog', label: 'Blog', count: blogPosts.length },
+];
+---
+
+<BaseLayout
+  title="Sitemap"
+  description="Overzicht van alle pagina's, product reviews, stream gidsen en blog artikelen op Nerd Plaza."
+>
+  <Header slot="header" currentPath="/sitemap/" />
+
+  <section class="sitemap-page section">
+    <div class="container">
+      <header class="sitemap-header">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <ol>
+            <li><a href="/">Home</a></li>
+            <li aria-hidden="true">/</li>
+            <li aria-current="page">Sitemap</li>
+          </ol>
+        </nav>
+        <h1>Sitemap</h1>
+        <p class="sitemap-intro">
+          Vind snel elke pagina op Nerd Plaza — van categorieën en product reviews tot stream gidsen en blog artikelen.
+        </p>
+
+        <div class="sitemap-toolbar">
+          <label class="sitemap-search-label" for="sitemap-search">Zoek in sitemap</label>
+          <input
+            id="sitemap-search"
+            class="sitemap-search"
+            type="search"
+            placeholder="Zoek op titel of URL…"
+            autocomplete="off"
+          />
+          <p class="sitemap-search-hint" id="sitemap-count" aria-live="polite">
+            {sections.reduce((n, s) => n + s.count, 0)} links
+          </p>
+        </div>
+
+        <nav class="sitemap-jump" aria-label="Sitemap secties">
+          {
+            sections.map((section) => (
+              <a href={`#${section.id}`} class="sitemap-jump-link">
+                {section.label}
+                <span class="sitemap-jump-count">{section.count}</span>
+              </a>
+            ))
+          }
+        </nav>
+      </header>
+
+      <div class="sitemap-sections">
+        <section id="paginas" class="sitemap-section" data-sitemap-section>
+          <h2 class="sitemap-section-title">Pagina's</h2>
+          <ul class="sitemap-grid sitemap-grid--compact">
+            <li class="sitemap-item" data-sitemap-item data-search="home /">
+              <a href="/">Home</a>
+            </li>
+            <li class="sitemap-item" data-sitemap-item data-search="blog /blog/">
+              <a href="/blog/">Blog</a>
+            </li>
+            <li class="sitemap-item" data-sitemap-item data-search="contact /contact/">
+              <a href="/contact/">Contact</a>
+            </li>
+            {
+              sitePages.map((page) => (
+                <li
+                  class="sitemap-item"
+                  data-sitemap-item
+                  data-search={`${page.data.title} /${page.id}/`}
+                >
+                  <a href={`/${page.id}/`}>{page.data.title.replace(/ - nerdplaza\.nl$/i, '')}</a>
+                </li>
+              ))
+            }
+          </ul>
+        </section>
+
+        <section id="reviews" class="sitemap-section" data-sitemap-section>
+          <h2 class="sitemap-section-title">Product reviews</h2>
+          <ul class="sitemap-grid">
+            {
+              reviews.map((page) => (
+                <li
+                  class="sitemap-item"
+                  data-sitemap-item
+                  data-search={`${page.data.title} /${page.id}/`}
+                >
+                  <a href={`/${page.id}/`}>{page.data.title}</a>
+                </li>
+              ))
+            }
+          </ul>
+        </section>
+
+        <section id="streamen" class="sitemap-section" data-sitemap-section>
+          <h2 class="sitemap-section-title">Streamen</h2>
+          <ul class="sitemap-grid">
+            {
+              streamPages.map((page) => (
+                <li
+                  class="sitemap-item"
+                  data-sitemap-item
+                  data-search={`${page.data.title} /${page.id}/`}
+                >
+                  <a href={`/${page.id}/`}>{page.data.title}</a>
+                </li>
+              ))
+            }
+          </ul>
+        </section>
+
+        <section id="vermogen" class="sitemap-section" data-sitemap-section>
+          <h2 class="sitemap-section-title">Vermogen</h2>
+          <ul class="sitemap-grid">
+            {
+              vermogenPages.map((page) => (
+                <li
+                  class="sitemap-item"
+                  data-sitemap-item
+                  data-search={`${page.data.title} /${page.id}/`}
+                >
+                  <a href={`/${page.id}/`}>{page.data.title}</a>
+                </li>
+              ))
+            }
+          </ul>
+        </section>
+
+        <section id="blog" class="sitemap-section" data-sitemap-section>
+          <h2 class="sitemap-section-title">Blog per categorie</h2>
+          {
+            Object.entries(blogByCategory)
+              .sort(([a], [b]) => a.localeCompare(b, 'nl'))
+              .map(([category, posts]) => (
+                <div class="sitemap-subsection">
+                  <h3 class="sitemap-subsection-title">{category}</h3>
+                  <ul class="sitemap-grid">
+                    {
+                      posts.map((post) => (
+                        <li
+                          class="sitemap-item"
+                          data-sitemap-item
+                          data-search={`${post.data.title} /${post.id}/ ${category}`}
+                        >
+                          <a href={`/${post.id}/`}>{post.data.title}</a>
+                        </li>
+                      ))
+                    }
+                  </ul>
+                </div>
+              ))
+          }
+        </section>
+      </div>
+    </div>
+  </section>
+
+  <Footer slot="footer" />
+</BaseLayout>
+
+<script>
+  const searchInput = document.getElementById('sitemap-search') as HTMLInputElement | null;
+  const countEl = document.getElementById('sitemap-count');
+  const items = document.querySelectorAll('[data-sitemap-item]');
+  const sections = document.querySelectorAll('[data-sitemap-section]');
+
+  function filterSitemap(query: string) {
+    const q = query.trim().toLowerCase();
+    let visible = 0;
+
+    items.forEach((item) => {
+      const haystack = (item.getAttribute('data-search') || item.textContent || '').toLowerCase();
+      const show = !q || haystack.includes(q);
+      item.classList.toggle('is-hidden', !show);
+      if (show) visible++;
+    });
+
+    sections.forEach((section) => {
+      const hasVisible = section.querySelector('[data-sitemap-item]:not(.is-hidden)');
+      section.classList.toggle('is-empty', !hasVisible);
+    });
+
+    if (countEl) {
+      countEl.textContent = q ? `${visible} resultaten` : `${items.length} links`;
+    }
+  }
+
+  searchInput?.addEventListener('input', () => filterSitemap(searchInput.value));
+</script>
+
+<style>
+  .sitemap-header {
+    margin-bottom: clamp(2rem, 4vw, 3rem);
+  }
+
+  .breadcrumb ol {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1.25rem;
+    font-size: 0.875rem;
+    color: var(--color-text-muted);
+  }
+
+  .breadcrumb a:hover {
+    color: var(--color-accent);
+  }
+
+  .sitemap-intro {
+    max-width: 720px;
+    margin-top: 0.75rem;
+    color: var(--color-text-muted);
+    line-height: 1.7;
+  }
+
+  .sitemap-toolbar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: end;
+    gap: 0.75rem 1.25rem;
+    margin-top: 1.75rem;
+    padding: 1.25rem;
+    background: var(--color-bg-elevated);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+  }
+
+  .sitemap-search-label {
+    width: 100%;
+    font-size: 0.8125rem;
+    font-weight: 600;
+    color: var(--color-text-muted);
+  }
+
+  .sitemap-search {
+    flex: 1;
+    min-width: min(100%, 320px);
+    padding: 0.75rem 1rem;
+    font-family: var(--font-primary);
+    font-size: 0.9375rem;
+    color: var(--color-text);
+    background: var(--color-bg);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-sm);
+  }
+
+  .sitemap-search:focus {
+    outline: 2px solid var(--color-accent);
+    outline-offset: 1px;
+  }
+
+  .sitemap-search-hint {
+    font-size: 0.8125rem;
+    color: var(--color-text-muted);
+    white-space: nowrap;
+  }
+
+  .sitemap-jump {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.625rem;
+    margin-top: 1.25rem;
+  }
+
+  .sitemap-jump-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 0.875rem;
+    font-size: 0.875rem;
+    color: var(--color-text);
+    background: var(--color-bg-elevated);
+    border: 1px solid var(--color-border);
+    border-radius: 999px;
+    transition: border-color var(--transition), color var(--transition);
+  }
+
+  .sitemap-jump-link:hover {
+    color: var(--color-accent);
+    border-color: var(--color-accent);
+  }
+
+  .sitemap-jump-count {
+    font-size: 0.75rem;
+    color: var(--color-text-muted);
+  }
+
+  .sitemap-sections {
+    display: flex;
+    flex-direction: column;
+    gap: clamp(2.5rem, 5vw, 4rem);
+  }
+
+  .sitemap-section.is-empty {
+    display: none;
+  }
+
+  .sitemap-section-title {
+    font-size: clamp(1.35rem, 2.5vw, 1.75rem);
+    font-weight: 600;
+    margin-bottom: 1.25rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 2px solid var(--color-accent);
+  }
+
+  .sitemap-subsection {
+    margin-bottom: 2rem;
+  }
+
+  .sitemap-subsection-title {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--color-accent);
+    margin-bottom: 1rem;
+  }
+
+  .sitemap-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 0.625rem 1.25rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .sitemap-grid--compact {
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  }
+
+  .sitemap-item.is-hidden {
+    display: none;
+  }
+
+  .sitemap-item a {
+    display: block;
+    padding: 0.625rem 0.875rem;
+    font-size: 0.875rem;
+    line-height: 1.45;
+    color: var(--color-text-muted);
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid transparent;
+    border-radius: var(--radius-sm);
+    transition: color var(--transition), border-color var(--transition), background var(--transition);
+  }
+
+  .sitemap-item a:hover {
+    color: var(--color-text);
+    border-color: rgba(214, 82, 248, 0.35);
+    background: rgba(214, 82, 248, 0.06);
+  }
+</style>

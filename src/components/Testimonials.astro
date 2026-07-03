@@ -1,0 +1,21 @@
+---
+/**
+ * Testimonials component — reserved for future social proof sections.
+ * The live nerdplaza.nl site does not currently include a testimonials block.
+ */
+interface Props {
+  heading?: string;
+}
+
+const { heading = 'Wat gamers zeggen' } = Astro.props;
+---
+
+<section class="testimonials section" aria-label={heading}>
+  <!-- Placeholder for future CMS-driven testimonials -->
+</section>
+
+<style>
+  .testimonials:empty {
+    display: none;
+  }
+</style>

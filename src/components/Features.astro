@@ -1,0 +1,148 @@
+---
+import { featureItems } from '../data/categories';
+
+const icons = [
+  // Gadgets
+  `<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none" aria-hidden="true"><path d="M36 16C38.1217 16 40.1566 16.8429 41.6569 18.3431C43.1571 19.8434 44 21.8783 44 24C44 26.1217 43.1571 28.1566 41.6569 29.6569C40.1566 31.1571 38.1217 32 36 32" stroke="#5D6169" stroke-width="2" stroke-linejoin="round"/><path d="M12 16C9.87827 16 7.84344 16.8429 6.34315 18.3431C4.84285 19.8434 4 21.8783 4 24C4 26.1217 4.84285 28.1566 6.34315 29.6569C7.84344 31.1571 9.87827 32 12 32" stroke="#5D6169" stroke-width="2" stroke-linejoin="round"/><path d="M12 32V16C12 9.373 17.373 4 24 4C30.627 4 36 9.373 36 16V32C36 38.627 30.627 44 24 44" stroke="#5D6169" stroke-width="2"/></svg>`,
+  // Cadeaus
+  `<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none" aria-hidden="true"><path d="M24 44V20M41 44H7M41 44V20H7V44H41Z" stroke="#5D6169" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 12H44V20H4V12Z" stroke="#5D6169" stroke-width="2" stroke-linejoin="round"/><path d="M16 4L24 12L32 4" stroke="#5D6169" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>`,
+  // Controllers
+  `<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none" aria-hidden="true"><path d="M19 30V33C19 34.8565 18.2625 36.637 16.9497 37.9497C15.637 39.2625 13.8565 40 12 40M29 30V33C29 34.8565 29.7375 36.637 31.0503 37.9497C32.363 39.2625 34.1435 40 36 40" stroke="#5D6169" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M32 8H16C9.92487 8 5 12.9249 5 19C5 25.0751 9.92487 30 16 30H32C38.0751 30 43 25.0751 43 19C43 12.9249 38.0751 8 32 8Z" stroke="#5D6169" stroke-width="2"/><path d="M21 19H13M17 15V23" stroke="#5D6169" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>`,
+  // Game PC's
+  `<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none" aria-hidden="true"><path d="M19 32H29V41H19V32Z" stroke="#5D6169" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M41 8H7C5.89543 8 5 8.89543 5 10V30C5 31.1046 5.89543 32 7 32H41C42.1046 32 43 31.1046 43 30V10C43 8.89543 42.1046 8 41 8Z" stroke="#5D6169" stroke-width="2"/><path d="M22 27H26M14 41H34" stroke="#5D6169" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>`,
+  // Online gamen
+  `<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none" aria-hidden="true"><path d="M44 28H28V44H44V28ZM13 4L22 20H4L13 4ZM36 20C38.1217 20 40.1566 19.1571 41.6569 17.6569C43.1571 16.1566 44 14.1217 44 12C44 9.87827 43.1571 7.84344 41.6569 6.34315C40.1566 4.84285 38.1217 4 36 4C33.8783 4 31.8434 4.84285 30.3431 6.34315C28.8429 7.84344 28 9.87827 28 12C28 14.1217 28.8429 16.1566 30.3431 17.6569C31.8434 19.1571 33.8783 20 36 20Z" stroke="#5D6169" stroke-width="2" stroke-linejoin="round"/><path d="M4 28L20 44M20 28L4 44" stroke="#5D6169" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>`,
+  // Games
+  `<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none" aria-hidden="true"><path d="M38.512 9.53599C34.7172 5.97289 29.7054 3.99277 24.5 3.99999C13.178 3.99999 4 13.178 4 24.5C4 35.822 13.178 45 24.5 45C29.894 45.0071 35.072 42.8812 38.905 39.086L24 24L38.512 9.53599Z" stroke="#5D6169" stroke-width="2" stroke-linejoin="round"/><path d="M40 28C41.0609 28 42.0783 27.5786 42.8284 26.8284C43.5786 26.0783 44 25.0609 44 24C44 22.9391 43.5786 21.9217 42.8284 21.1716C42.0783 20.4214 41.0609 20 40 20" stroke="#5D6169" stroke-width="2" stroke-linejoin="round"/><path d="M17 13V21M13 17H21" stroke="#5D6169" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>`,
+];
+---
+
+<section class="features">
+  <div class="container">
+    <ul class="features-grid">
+      {
+        featureItems.map((item, index) => (
+          <li class="feature-item">
+            <a href={item.href} class="feature-link" aria-label={item.label}>
+              <span class="feature-icon" set:html={icons[index]} />
+              <span class="feature-label">{item.label}</span>
+              <span class="feature-arrow" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                  <path d="M5 12H19M19 12L13 6M19 12L13 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </span>
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+  </div>
+</section>
+
+<style>
+  .features {
+    margin-top: -7.5rem;
+    position: relative;
+    z-index: 10;
+    padding-bottom: 2rem;
+  }
+
+  .features-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    background: var(--color-bg-dark);
+    border-radius: var(--radius-sm);
+    box-shadow: var(--shadow-feature);
+    overflow: hidden;
+  }
+
+  .feature-item {
+    border-right: 1px solid var(--color-border);
+  }
+
+  .feature-item:last-child {
+    border-right: none;
+  }
+
+  .feature-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.9375rem;
+    padding: 2rem 0.625rem;
+    text-align: center;
+    transition: background var(--transition);
+  }
+
+  .feature-link:hover {
+    background: rgba(214, 82, 248, 0.06);
+  }
+
+  .feature-link:hover .feature-label {
+    color: var(--color-accent);
+  }
+
+  .feature-link:hover .feature-arrow {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .feature-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .feature-label {
+    font-size: 0.9375rem;
+    font-weight: 600;
+    color: var(--color-text);
+    transition: color var(--transition);
+  }
+
+  .feature-arrow {
+    display: flex;
+    color: var(--color-accent);
+    opacity: 0.6;
+    transform: translateY(4px);
+    transition: opacity var(--transition), transform var(--transition);
+  }
+
+  @media (max-width: 1023px) {
+    .features-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    .feature-item:nth-child(3) {
+      border-right: none;
+    }
+
+    .feature-item:nth-child(4),
+    .feature-item:nth-child(5) {
+      border-right: 1px solid var(--color-border);
+    }
+  }
+
+  @media (max-width: 767px) {
+    .features {
+      margin-top: -5rem;
+    }
+
+    .features-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .feature-item {
+      border-right: none;
+      border-bottom: 1px solid var(--color-border);
+    }
+
+    .feature-item:nth-child(odd) {
+      border-right: 1px solid var(--color-border);
+    }
+
+    .feature-link {
+      padding: 1.25rem 0.625rem 1.5rem;
+    }
+  }
+</style>

@@ -1,0 +1,22 @@
+---
+title: "Hoe gebruik je WeTransfer?"
+description: "Hoe gebruik je WeTransfer? WeTransfer is een website die het mogelijk maakt om grote bestanden te verzenden. Denk hierbij aan vakantiefoto’s die je naar je medereizigers wil sturen, een flyer voor een feest, of een advertentie voor je werk. Wil je We Transfer gebruiken dan moet j"
+pubDate: "2024-08-27T14:17:37.000Z"
+updatedDate: "2024-10-05T15:12:45.000Z"
+author: "admin"
+categories: ["Blog"]
+tags: []
+featuredImage: "/images/wp/2024/08/paper-6686880_1280.png"
+imageAlt: "paper-6686880_1280"
+---
+
+<p>WeTransfer is een website die het mogelijk maakt om grote bestanden te verzenden. Denk hierbij aan vakantiefoto’s die je naar je medereizigers wil sturen, een flyer voor een feest, of een advertentie voor je werk. Wil je <b>We Transfer gebruiken</b> dan moet je wel weten hoe dat moet. Vindt hier het antwoord op, hoe werkt WeTransfer en ontdek hoe je grote bestanden gratis kunt verzenden.</p><p><em>Wil je schermafbeeldingen maken, maar weet je niet hoe? Ontdek de verschillende manieren om <a href="/schermafbeeldingen-maken-op-windows-pc/" target="_new" rel="noopener">schermafbeeldingen te maken op een Windows-pc</a> en deel wat je ziet.</em></p>		
+													<img width="800" height="533" src="/images/wp/2024/08/paper-6686880_1280-1024x682.png" alt="" srcset="/images/wp/2024/08/paper-6686880_1280-1024x682.png 1024w, /images/wp/2024/08/paper-6686880_1280-300x200.png 300w, /images/wp/2024/08/paper-6686880_1280-768x512.png 768w, /images/wp/2024/08/paper-6686880_1280.png 1280w" sizes="(max-width: 800px) 100vw, 800px" />													
+			<h2>Hoe werkt WeTransfer?</h2>		
+		<p>WeTransfer is een website die het mogelijk maakt om grote bestanden te versturen zonder kosten. In de meeste gevallen gebruiken mensen e-mail om bestanden te versturen, maar er zit een beperking aan de grootte van die bestanden. Vaak kun je maar<b> 5 tot 10 mb </b>versturen. Dat is vaak niet genoeg voor foto’s, audioberichten, documenten en video’s. </p><p>WeTransfer is gratis als je niet meer dan 2 GB verstuurd. Heb je meer GB nodig dan kun je kiezen voor WeTransfer Pro. Voor 10 euro per maand mag je maandelijks <b>tot 200 GB</b> versturen.</p><p><em>Twijfel je over het juiste gebruik van de termen cc en bcc? Lees ons artikel over het <a href="/verschil-cc-en-bcc/" target="_new" rel="noopener">verschil tussen cc en bcc</a> om professioneel je e-mails te versturen.</em></p>		
+			<h2>Grote bestanden gratis verzenden</h2>		
+		<p>Doorloop de volgende stappen als je We Transfer wil gebruiken. </p><ol><li style="font-weight: 400;">Ga naar de website van WeTransfer. </li><li style="font-weight: 400;">Klik op <b>Alles accepteren</b> om de cookies goed te keuren. </li><li style="font-weight: 400;">Ga daarna akkoord met de gebruikersvoorwaarden en privacybeleid door op <b>Ik ga akkoord</b> te klikken. </li><li style="font-weight: 400;">Je krijgt direct een scherm te zien waar je een bestand of map kunt toevoegen. Klik op de blauwe plus-knop om je bestand te selecteren. </li><li style="font-weight: 400;">Voer vervolgens het e-mailadres van de ontvangers of ontvangers in. </li><li style="font-weight: 400;">Voer daarna je eigen e-mailadres in. </li><li style="font-weight: 400;">Voer een titel in voor het bericht dat naar de ontvangers gestuurd wordt en schrijf een begeleidend bericht. </li><li>Klik op <b>Versturen</b>. Je documenten zullen nu naar de ontvangers gestuurd worden. De link is drie dagen lang te gebruiken om het document te downloaden.</li></ol><p> </p><p><em>Bewaar je je administratie lang genoeg? Ontdek in ons artikel hoe lang je <a href="/administratie-bewaren-hoe-lang/" target="_new" rel="noopener">administratie bewaard moet worden</a> volgens de wet.</em></p>		
+			<h2>WeTransfer gebruiken en bestanden ontvangen</h2>		
+		<p>Ontvang je een WeTransfer link dan kun je het bijbehorende bestand op de volgende manier downloaden:</p><ol><li style="font-weight: 400;">Klik op de knop in de e-mail die gestuurd is. Die zal je doorsturen naar de pagina van WeTransfer. </li><li style="font-weight: 400;">Ga akkoord met de gebruikersvoorwaarden en privacybeleid. </li><li style="font-weight: 400;">Klik op Downloaden.</li><li style="font-weight: 400;">Ga naar je bestanden en zoek de map Downloads.</li><li style="font-weight: 400;">Klik met de rechtermuisknop op de map met het bestand. Kies voor Alles uitpakken. </li><li style="font-weight: 400;">Het document zal nu opgeslagen worden op je computer. </li></ol>		
+
+			<p>Nieuwste blogs</p>

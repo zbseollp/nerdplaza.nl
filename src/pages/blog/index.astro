@@ -1,0 +1,54 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../../components/Header.astro';
+import BlogCard from '../../components/BlogCard.astro';
+import Footer from '../../components/Footer.astro';
+
+const posts = (await getCollection('blog')).sort(
+  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
+);
+---
+
+<BaseLayout title="Blog" description="Lees de laatste blog posts op Nerd Plaza — alles over gamen, tech en entertainment.">
+  <Header slot="header" currentPath={Astro.url.pathname} />
+
+  <section class="blog-page section">
+    <div class="container">
+      <div class="blog-page-header">
+        <h1>Blog Posts</h1>
+        <p class="section-subtitle">Lees hier de laatste blog posts.</p>
+      </div>
+
+      <div class="blog-page-grid">
+        {posts.map((post) => <BlogCard post={post} />)}
+      </div>
+    </div>
+  </section>
+
+  <Footer slot="footer" />
+</BaseLayout>
+
+<style>
+  .blog-page-header {
+    margin-bottom: clamp(2rem, 4vw, 3rem);
+  }
+
+  .blog-page-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2.25rem clamp(1rem, 2vw, 2rem);
+  }
+
+  @media (max-width: 1023px) {
+    .blog-page-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (max-width: 599px) {
+    .blog-page-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

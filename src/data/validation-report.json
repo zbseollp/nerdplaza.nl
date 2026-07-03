@@ -1,0 +1,10 @@
+{
+  "validatedAt": "2026-06-30T09:39:51.174Z",
+  "totalUrls": 719,
+  "builtPresent": 719,
+  "builtMissing": 0,
+  "missingUrls": [],
+  "playwright": {
+    "skipped": true
+  }
+}

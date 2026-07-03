@@ -1,0 +1,15 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Contact from '../components/Contact.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<BaseLayout
+  title="Contact"
+  description="Wil je contact met de redactie van Nerdplaza.nl of zou je een samenwerking met ons aan willen gaan? Neem contact op via ons formulier."
+>
+  <Header slot="header" currentPath={Astro.url.pathname} />
+  <Contact />
+  <Footer slot="footer" />
+</BaseLayout>
