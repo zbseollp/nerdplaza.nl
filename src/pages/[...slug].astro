@@ -4,9 +4,13 @@ import BlogPostLayout from '../layouts/BlogPostLayout.astro';
 import PageLayout from '../layouts/PageLayout.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
+import { getAllPosts } from '../lib/posts';
+import { repairMediaUrlsInHtml } from '../lib/media-url.mjs';
 
 export async function getStaticPaths() {
-  const blogEntries = await getCollection('blog');
+  // Same publish filter as every listing — a post that is not on /blog/ must not
+  // have a detail URL either.
+  const blogEntries = await getAllPosts();
   const pageEntries = await getCollection('pages');
 
   const blogPaths = blogEntries.map((entry) => ({
@@ -14,8 +18,13 @@ export async function getStaticPaths() {
     props: { type: 'blog' as const, entry },
   }));
 
+  const takenSlugs = new Set(blogPaths.map((path) => path.params.slug));
+
   const pagePaths = pageEntries
     .filter((entry) => entry.id !== 'sitemap')
+    // A blog post and a page can share a slug; the post wins, and emitting both
+    // would fail the build on duplicate routes.
+    .filter((entry) => !takenSlugs.has(entry.id))
     .map((entry) => ({
       params: { slug: entry.id },
       props: { type: 'page' as const, entry },
@@ -43,7 +52,7 @@ if (type === 'blog') {
   ) : (
     <PageLayout entry={entry}>
       <Header slot="header" currentPath={currentPath} />
-      <div class="page-html-content" set:html={entry.body} />
+      <div class="page-html-content" set:html={repairMediaUrlsInHtml(entry.body ?? '')} />
       <Footer slot="footer" />
     </PageLayout>
   )

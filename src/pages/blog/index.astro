@@ -1,13 +1,13 @@
 ---
-import { getCollection } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import Header from '../../components/Header.astro';
 import BlogCard from '../../components/BlogCard.astro';
 import Footer from '../../components/Footer.astro';
+import { getAllPosts } from '../../lib/posts';
 
-const posts = (await getCollection('blog')).sort(
-  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
-);
+// getAllPosts() is the single publish filter: drafts, unpublished, future-dated
+// and spam posts are already excluded, newest first.
+const posts = await getAllPosts();
 ---
 
 <BaseLayout title="Blog" description="Lees de laatste blog posts op Nerd Plaza — alles over gamen, tech en entertainment.">

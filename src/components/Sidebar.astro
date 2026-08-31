@@ -1,5 +1,5 @@
 ---
-import { getCollection } from 'astro:content';
+import { getRelatedPosts, postPubDate, postUrl } from '../lib/posts';
 
 interface Props {
   currentSlug?: string;
@@ -8,10 +8,7 @@ interface Props {
 
 const { currentSlug, heading = 'Andere artikelen' } = Astro.props;
 
-const posts = (await getCollection('blog'))
-  .filter((post) => post.id !== currentSlug)
-  .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
-  .slice(0, 6);
+const posts = await getRelatedPosts(currentSlug, 6);
 
 function formatDate(date: Date) {
   return date.toLocaleDateString('nl-NL', {
@@ -28,10 +25,10 @@ function formatDate(date: Date) {
     {
       posts.map((post) => (
         <li class="sidebar-item">
-          <a href={`/${post.id}/`} class="sidebar-link">
+          <a href={postUrl(post)} class="sidebar-link">
             <span class="sidebar-link-title">{post.data.title}</span>
-            <time class="sidebar-link-date" datetime={post.data.pubDate.toISOString()}>
-              {formatDate(post.data.pubDate)}
+            <time class="sidebar-link-date" datetime={postPubDate(post).toISOString()}>
+              {formatDate(postPubDate(post))}
             </time>
           </a>
         </li>

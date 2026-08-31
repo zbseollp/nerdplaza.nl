@@ -1,14 +1,28 @@
 ---
-import type { CollectionEntry } from 'astro:content';
 import BaseLayout from './BaseLayout.astro';
 import Sidebar from '../components/Sidebar.astro';
+import type { BlogPost } from '../lib/posts';
+import {
+  postDescription,
+  postHeroImage,
+  postImage,
+  postImageAlt,
+  postPubDate,
+  postUrl as buildPostUrl,
+} from '../lib/posts';
 
 interface Props {
-  entry: CollectionEntry<'blog'>;
+  entry: BlogPost;
 }
 
 const { entry } = Astro.props;
-const { title, description, pubDate, author, categories, featuredImage, imageAlt } = entry.data;
+const { title, author, categories } = entry.data;
+
+const description = postDescription(entry);
+const pubDate = postPubDate(entry);
+const featuredImage = postHeroImage(entry);
+const imageAlt = postImageAlt(entry);
+const socialImage = postImage(entry);
 
 const formattedDate = pubDate.toLocaleDateString('nl-NL', {
   year: 'numeric',
@@ -16,10 +30,14 @@ const formattedDate = pubDate.toLocaleDateString('nl-NL', {
   day: 'numeric',
 });
 
-const postUrl = `/${entry.id}/`;
+const postUrl = buildPostUrl(entry);
+const canonicalUrl = new URL(postUrl, Astro.site).href;
+// og:image must be absolute; the resolver already returns absolute R2 URLs,
+// local /images/… paths still need the site origin prepended.
+const ogImage = socialImage ? new URL(socialImage, Astro.site).href : undefined;
 ---
 
-<BaseLayout title={title} description={description} canonical={new URL(postUrl, Astro.site).href}>
+<BaseLayout title={title} description={description} canonical={canonicalUrl} image={ogImage} ogType="article">
   <slot name="header" slot="header" />
   <article class="blog-detail section">
     <div class="container blog-detail-grid">
@@ -54,6 +72,22 @@ const postUrl = `/${entry.id}/`;
             </figure>
           )
         }
+
+        <script
+          type="application/ld+json"
+          is:inline
+          set:html={JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'BlogPosting',
+            headline: title,
+            description,
+            datePublished: pubDate.toISOString(),
+            mainEntityOfPage: canonicalUrl,
+            url: canonicalUrl,
+            ...(ogImage ? { image: [ogImage] } : {}),
+            ...(author ? { author: { '@type': 'Person', name: author } } : {}),
+          })}
+        />
 
         <div class="blog-detail-content prose">
           <slot />

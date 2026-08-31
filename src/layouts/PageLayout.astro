@@ -2,13 +2,17 @@
 import type { CollectionEntry } from 'astro:content';
 import BaseLayout from './BaseLayout.astro';
 import Sidebar from '../components/Sidebar.astro';
+import { resolveFeaturedImage, resolveFeaturedImageAlt } from '../lib/blogImages';
 
 interface Props {
   entry: CollectionEntry<'pages'>;
 }
 
 const { entry } = Astro.props;
-const { title, description, pubDate, featuredImage, pageType } = entry.data;
+const { title, description, pubDate, pageType } = entry.data;
+
+const featuredImage = resolveFeaturedImage(entry.data as Record<string, unknown>);
+const featuredImageAlt = resolveFeaturedImageAlt(entry.data as Record<string, unknown>, title);
 
 const formattedDate = pubDate.toLocaleDateString('nl-NL', {
   year: 'numeric',
@@ -22,7 +26,13 @@ const showDate = pageType !== 'review' && pageType !== 'stream';
 const pageSlugClass = `page-slug-${entry.id.replace(/[^a-z0-9-]/gi, '-')}`;
 ---
 
-<BaseLayout title={title} description={description} canonical={new URL(pageUrl, Astro.site).href}>
+<BaseLayout
+  title={title}
+  description={description}
+  canonical={new URL(pageUrl, Astro.site).href}
+  image={featuredImage ? new URL(featuredImage, Astro.site).href : undefined}
+  ogType="article"
+>
   <slot name="header" slot="header" />
   <article class={`page-content section ${layoutClass} ${pageSlugClass}`}>
     <div class="container page-content-grid">
@@ -53,7 +63,7 @@ const pageSlugClass = `page-slug-${entry.id.replace(/[^a-z0-9-]/gi, '-')}`;
         {
           featuredImage && (
             <figure class="page-content-image">
-              <img src={featuredImage} alt={title} width="960" height="540" loading="eager" decoding="async" />
+              <img src={featuredImage} alt={featuredImageAlt || title} width="960" height="540" loading="eager" decoding="async" />
             </figure>
           )
         }

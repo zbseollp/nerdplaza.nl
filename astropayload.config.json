@@ -3,5 +3,9 @@
   "tenantSlug": "nerdplaza",
   "modules": ["blog"],
   "blogContentPath": "src/content/blog",
-  "blogFileExtension": "md"
+  "blogFileExtension": "md",
+  "blogImageFields": {
+    "heroImage": "heroImage",
+    "featuredImage": "featuredImage"
+  }
 }

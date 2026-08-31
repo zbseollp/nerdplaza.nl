@@ -1,6 +1,6 @@
 ---
 title: "De Top 10 Steden van Nederland"
-description: "/*! elementor - v3.21.0 - 22-05-2024 */ .elementor-widget-image{text-align:center}.elementor-widget-image a{display:inline-block}.elementor-widget-image a img[src$=\".svg\"]{width:48px}.elementor-widget-image img{vertical-align:middle;display:inline-block} Nederland staat bekend om"
+description: "Nederland staat bekend om zijn pittoreske landschappen, rijke geschiedenis en bruisende steden. Van het historische Amsterdam tot het moderne Rotterdam, elke stad heeft zijn eigen unieke charme en…"
 pubDate: "2024-07-25T07:55:02.000Z"
 updatedDate: "2024-07-25T08:00:22.000Z"
 author: "admin"
@@ -10,11 +10,9 @@ featuredImage: "/images/wp/2024/07/top-10-steden-nederland.jpg"
 imageAlt: "top 10 steden nederland"
 ---
 
-<style>/*! elementor - v3.21.0 - 22-05-2024 */
-.elementor-widget-image{text-align:center}.elementor-widget-image a{display:inline-block}.elementor-widget-image a img[src$=".svg"]{width:48px}.elementor-widget-image img{vertical-align:middle;display:inline-block}</style>										<img width="800" height="527" src="/images/wp/2024/07/top-10-steden-nederland-1024x674.jpg" alt="" srcset="/images/wp/2024/07/top-10-steden-nederland-1024x674.jpg 1024w, /images/wp/2024/07/top-10-steden-nederland-300x198.jpg 300w, /images/wp/2024/07/top-10-steden-nederland-768x506.jpg 768w, /images/wp/2024/07/top-10-steden-nederland.jpg 1280w" sizes="(max-width: 800px) 100vw, 800px" />													
+										<img width="800" height="527" src="/images/wp/2024/07/top-10-steden-nederland-1024x674.jpg" alt="" srcset="/images/wp/2024/07/top-10-steden-nederland-1024x674.jpg 1024w, /images/wp/2024/07/top-10-steden-nederland-300x198.jpg 300w, /images/wp/2024/07/top-10-steden-nederland-768x506.jpg 768w, /images/wp/2024/07/top-10-steden-nederland.jpg 1280w" sizes="(max-width: 800px) 100vw, 800px" />													
 		<p>Nederland staat bekend om zijn pittoreske landschappen, rijke geschiedenis en bruisende steden. Van het historische Amsterdam tot het moderne Rotterdam, elke stad heeft zijn eigen unieke charme en aantrekkingskracht. In dit artikel nemen we een kijkje naar de <a href="https://naamloos.nl/gevaarlijkste-steden-nederland/" target="_blank" rel="noopener">top 10 steden Nederland</a>, waarbij we de culturele, historische en innovatieve aspecten van elke stad belichten.</p>		
-			<style>/*! elementor - v3.21.0 - 22-05-2024 */
-.elementor-heading-title{padding:0;margin:0;line-height:1}.elementor-widget-heading .elementor-heading-title[class*=elementor-size-]>a{color:inherit;font-size:inherit;line-height:inherit}.elementor-widget-heading .elementor-heading-title.elementor-size-small{font-size:15px}.elementor-widget-heading .elementor-heading-title.elementor-size-medium{font-size:19px}.elementor-widget-heading .elementor-heading-title.elementor-size-large{font-size:29px}.elementor-widget-heading .elementor-heading-title.elementor-size-xl{font-size:39px}.elementor-widget-heading .elementor-heading-title.elementor-size-xxl{font-size:59px}</style><h2>Amsterdam: culturele hoofdstad</h2>		
+			<h2>Amsterdam: culturele hoofdstad</h2>		
 		<p>Amsterdam, de hoofdstad van Nederland, is beroemd om zijn grachten, musea en bruisende nachtleven. De stad herbergt iconische bezienswaardigheden zoals het Rijksmuseum, het Van Gogh Museum en het Anne Frank Huis. Met zijn historische grachtenpanden en levendige markten trekt Amsterdam jaarlijks miljoenen toeristen. De stad staat ook bekend om zijn liberale beleid en diverse culturele scene.</p>		
 			<h2>Rotterdam: moderne metropool</h2>		
 		<p>Rotterdam, de op een na grootste stad van Nederland, staat bekend om zijn moderne architectuur en dynamische haven. De stad werd na de Tweede Wereldoorlog vrijwel volledig herbouwd en is nu een toonbeeld van moderne stedelijke ontwikkeling. Bezienswaardigheden zoals de Erasmusbrug, de Markthal en de Euromast trekken bezoekers van over de hele wereld. Rotterdam is ook een centrum van innovatie en creativiteit, met talrijke startups en techbedrijven.</p>		

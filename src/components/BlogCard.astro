@@ -1,14 +1,21 @@
 ---
-import type { CollectionEntry } from 'astro:content';
+import type { BlogPost } from '../lib/posts';
+import { postUrl as buildPostUrl, postImage, postImageAlt, postPubDate } from '../lib/posts';
 
 interface Props {
-  post: CollectionEntry<'blog'>;
+  post: BlogPost;
   variant?: 'card' | 'classic';
 }
 
 const { post, variant = 'classic' } = Astro.props;
-const { title, pubDate, featuredImage, imageAlt } = post.data;
-const postUrl = `/${post.id}/`;
+const { title } = post.data;
+const postUrl = buildPostUrl(post);
+const pubDate = postPubDate(post);
+
+// Resolved through the media chokepoint: Payload `/media/…` paths become R2 URLs
+// and an absent image resolves to '' so no broken <img> is rendered.
+const image = postImage(post);
+const imageAlt = postImageAlt(post);
 
 const formattedDate = pubDate.toLocaleDateString('nl-NL', {
   year: 'numeric',
@@ -19,10 +26,12 @@ const formattedDate = pubDate.toLocaleDateString('nl-NL', {
 
 <article class:list={['blog-card', variant === 'classic' && 'blog-card--classic']}>
   {
-    featuredImage && (
+    image ? (
       <a href={postUrl} class="blog-card-thumb" tabindex="-1" aria-hidden="true">
-        <img src={featuredImage} alt={imageAlt || title} width="300" height="200" loading="lazy" decoding="async" />
+        <img src={image} alt={imageAlt || title} width="300" height="200" loading="lazy" decoding="async" />
       </a>
+    ) : (
+      <a href={postUrl} class="blog-card-thumb blog-card-thumb--empty" tabindex="-1" aria-hidden="true" />
     )
   }
   <div class="blog-card-body">
@@ -70,6 +79,13 @@ const formattedDate = pubDate.toLocaleDateString('nl-NL', {
     overflow: hidden;
     aspect-ratio: 16 / 10;
     background: var(--color-bg-dark);
+  }
+
+  .blog-card-thumb--empty {
+    aspect-ratio: auto;
+    height: 4px;
+    border-radius: 2px;
+    background: linear-gradient(90deg, var(--color-accent), var(--color-accent-hover));
   }
 
   .blog-card-thumb img {

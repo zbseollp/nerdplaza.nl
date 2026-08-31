@@ -1,6 +1,6 @@
 ---
-import { getCollection } from 'astro:content';
 import BlogCard from './BlogCard.astro';
+import { getAllPosts } from '../lib/posts';
 
 interface Props {
   limit?: number;
@@ -9,9 +9,7 @@ interface Props {
 
 const { limit = 8, showHeader = true } = Astro.props;
 
-const posts = (await getCollection('blog'))
-  .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
-  .slice(0, limit);
+const posts = (await getAllPosts()).slice(0, limit);
 ---
 
 <section class="blog-posts section">

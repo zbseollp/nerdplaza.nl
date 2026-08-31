@@ -3,11 +3,11 @@ import { getCollection } from 'astro:content';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
+import { getAllPosts } from '../lib/posts';
 
 const pages = (await getCollection('pages')).sort((a, b) => a.data.title.localeCompare(b.data.title, 'nl'));
-const blogPosts = (await getCollection('blog')).sort(
-  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
-);
+// Same publish filter as /blog/ so the HTML sitemap never links a 404.
+const blogPosts = await getAllPosts();
 
 const CATEGORY_SLUGS = new Set([
   'gamen',
