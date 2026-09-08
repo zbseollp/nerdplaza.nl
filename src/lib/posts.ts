@@ -15,7 +15,16 @@ function isDraft(data: BlogPost['data']): boolean {
 function isUnpublished(data: BlogPost['data']): boolean {
   const status = (data as Record<string, unknown>)._status;
   if (typeof status !== 'string' || !status.trim()) return false;
-  return status.trim().toLowerCase() !== 'published';
+  const normalized = status.trim().toLowerCase();
+  // Only hide clearly unpublished CMS states. Anything else (including typos
+  // like "Publish") must not keep a synced article offline.
+  return (
+    normalized === 'draft' ||
+    normalized === 'private' ||
+    normalized === 'archived' ||
+    normalized === 'unpublished' ||
+    normalized === 'scheduled'
+  );
 }
 
 /** Newest of the dates a post carries — Payload is inconsistent about which it sets. */
@@ -98,7 +107,9 @@ export async function getAllPosts(): Promise<BlogPost[]> {
 
   const published = posts
     .filter((post) => {
-      if (postPubDate(post).valueOf() > now) {
+      // Allow small clock / timezone skew so CMS "now" posts are not treated as future.
+      const skewMs = 36 * 60 * 60 * 1000;
+      if (postPubDate(post).valueOf() > now + skewMs) {
         skipped.push({ id: post.id, reason: 'future-date' });
         return false;
       }

@@ -1,0 +1,4 @@
+# Cloudflare Workers static assets redirects (Workers / Pages).
+# Articles live at /:slug/; /blog/:slug/ must not 404 for editors & shared links.
+/blog/:slug /:slug 301
+/blog/:slug/ /:slug/ 301
