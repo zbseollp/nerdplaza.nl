@@ -72,19 +72,50 @@ export function postDescription(post: BlogPost): string {
  * The single source of truth for which posts are online.
  * Every listing, route and card must go through this — a weaker filter
  * elsewhere is how drafts and spam leak onto the site.
+ *
+ * Note: `prepare:blog` runs strip-publish-flags so leftover WP `draft` /
+ * `_status` from Payload merges cannot hide a CMS-published post.
  */
 export async function getAllPosts(): Promise<BlogPost[]> {
   const now = Date.now();
+  const skipped: Array<{ id: string; reason: string }> = [];
+
   const posts = await getCollection('blog', ({ data, id, body }) => {
-    if (isDraft(data)) return false;
-    if (isUnpublished(data)) return false;
-    if (isSpamBlogPost(id, body ?? '', data.title ?? '')) return false;
+    if (isDraft(data)) {
+      skipped.push({ id, reason: 'draft' });
+      return false;
+    }
+    if (isUnpublished(data)) {
+      skipped.push({ id, reason: `_status=${String((data as Record<string, unknown>)._status)}` });
+      return false;
+    }
+    if (isSpamBlogPost(id, body ?? '', data.title ?? '')) {
+      skipped.push({ id, reason: 'spam' });
+      return false;
+    }
     return true;
   });
 
-  return posts
-    .filter((post) => postPubDate(post).valueOf() <= now)
+  const published = posts
+    .filter((post) => {
+      if (postPubDate(post).valueOf() > now) {
+        skipped.push({ id: post.id, reason: 'future-date' });
+        return false;
+      }
+      return true;
+    })
     .sort((a, b) => postDate(b).valueOf() - postDate(a).valueOf());
+
+  if (skipped.length && import.meta.env.PROD) {
+    console.log(
+      `[posts] publishing ${published.length}; skipped ${skipped.length}: ${skipped
+        .slice(0, 20)
+        .map((s) => `${s.id}(${s.reason})`)
+        .join(', ')}${skipped.length > 20 ? '…' : ''}`,
+    );
+  }
+
+  return published;
 }
 
 /** Newest posts excluding the one being viewed. */

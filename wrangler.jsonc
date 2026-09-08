@@ -1,6 +1,10 @@
 {
   "name": "nerdplaza",
   "account_id": "aa20277e66394b81d65252fd5708e2c0",
+  // Required so wrangler deploy prints https://nerdplaza.<subdomain>.workers.dev
+  // (Jenkins greps that URL into Payload Workers.dev / Preview). Without this,
+  // custom-domain-only deploys leave an empty URL and Payload showed "true".
+  "workers_dev": true,
   // Expliciet vastgelegd zodat een deploy de domeinkoppeling niet kan opruimen.
   "routes": [
     { "pattern": "nerdplaza.nl", "custom_domain": true },

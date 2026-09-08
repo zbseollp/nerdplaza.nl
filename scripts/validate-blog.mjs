@@ -30,7 +30,7 @@ for (const file of files) {
     frontmatterValue(frontmatter, 'publishedAt') ||
     frontmatterValue(frontmatter, 'updatedDate');
   if (!date) {
-    errors.push(`${rel}: no pubDate/date/publishedAt/updatedDate`);
+    warnings.push(`${rel}: no pubDate/date/publishedAt/updatedDate (schema falls back; post still builds)`);
   } else if (Number.isNaN(new Date(date).valueOf())) {
     errors.push(`${rel}: unparseable date "${date}"`);
   }

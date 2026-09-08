@@ -6,12 +6,13 @@
     "node": ">=22.12.0"
   },
   "scripts": {
-    "prepare:blog": "node scripts/remove-spam-blog.mjs && node scripts/sanitize-blog.mjs && node scripts/fix-blog-descriptions.mjs && node scripts/validate-blog.mjs",
+    "prepare:blog": "node scripts/remove-spam-blog.mjs && node scripts/strip-publish-flags.mjs && node scripts/sanitize-blog.mjs && node scripts/fix-blog-descriptions.mjs && node scripts/validate-blog.mjs",
     "dev": "npm run prepare:blog && astro dev",
     "build": "npm run prepare:blog && astro build",
     "build:ci": "cross-env NODE_OPTIONS=--max-old-space-size=8192 npm run build",
     "preview": "astro preview",
     "astro": "astro",
+    "deploy": "npx wrangler@4 deploy",
     "migrate": "node scripts/migrate-wordpress.mjs && node scripts/fix-mdx-content.mjs && node scripts/generate-navigation.mjs",
     "scrape": "node scripts/scrape-live-pages.mjs",
     "normalize-reviews": "node scripts/normalize-review-pages.mjs",
