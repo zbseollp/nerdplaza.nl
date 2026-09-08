@@ -1,5 +1,11 @@
 {
   "name": "nerdplaza",
+  "account_id": "aa20277e66394b81d65252fd5708e2c0",
+  // Expliciet vastgelegd zodat een deploy de domeinkoppeling niet kan opruimen.
+  "routes": [
+    { "pattern": "nerdplaza.nl", "custom_domain": true },
+    { "pattern": "www.nerdplaza.nl", "custom_domain": true }
+  ],
   "compatibility_date": "2025-01-01",
   "assets": {
     "directory": "./dist"
