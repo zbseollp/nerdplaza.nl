@@ -74,16 +74,59 @@ function encodePath(path) {
 }
 
 /** Pull a usable string out of the several shapes Payload emits. */
-function toRawString(input) {
+function extractMediaPath(input) {
   if (!input) return '';
-  if (typeof input === 'string') return input.trim();
+  if (typeof input === 'string') {
+    return input.trim().replace(/\s+\\?["'].*$/, '').trim();
+  }
+  if (Array.isArray(input)) {
+    for (const item of input) {
+      const found = extractMediaPath(item);
+      if (found) return found;
+    }
+    return '';
+  }
   if (typeof input !== 'object') return '';
-  const candidate =
-    input.url ?? input.src ?? input.filename ?? input.path ?? input.thumbnailURL ?? '';
-  return typeof candidate === 'string' ? candidate.trim() : '';
+
+  const filename = typeof input.filename === 'string' ? input.filename.trim() : '';
+  const prefix = typeof input.prefix === 'string' ? input.prefix.trim().replace(/^\/+|\/+$/g, '') : '';
+  const rawUrl = typeof input.url === 'string' ? input.url.trim() : '';
+
+  if (filename && prefix) {
+    if (rawUrl && /^https?:\/\//i.test(rawUrl) && !rawUrl.includes(`/${prefix}/`)) {
+      try {
+        const u = new URL(rawUrl);
+        u.pathname = `/${prefix}/${filename}`;
+        return u.toString();
+      } catch {
+        /* fall through */
+      }
+    }
+    if (rawUrl) return rawUrl;
+    return `/${prefix}/${filename}`;
+  }
+
+  if (rawUrl) return rawUrl;
+  if (typeof input.src === 'string' && input.src.trim()) return input.src.trim();
+  if (typeof input.path === 'string' && input.path.trim()) return input.path.trim();
+  if (typeof input.thumbnailURL === 'string' && input.thumbnailURL.trim()) return input.thumbnailURL.trim();
+  if (filename) return `/media/${filename}`;
+  if (input.value && typeof input.value === 'object') return extractMediaPath(input.value);
+  return '';
 }
 
 const MEDIA_EXTENSION = /\.(jpe?g|png|gif|webp|avif|svg|bmp|tiff?|ico|mp4|webm|mov|m4v|pdf)$/i;
+
+/** True when this URL/path can be a real <img src>, not a webpage dumped into the field. */
+function looksLikeImageRef(value) {
+  if (!value) return false;
+  if (value.startsWith('data:image/')) return true;
+  const path = value.split(/[?#]/)[0];
+  if (/^\/(?:media|api\/media)\//i.test(path)) return true;
+  if (/r2\.dev|cloudflarestorage\.com/i.test(value)) return true;
+  if (SITE_RELATIVE_PREFIXES.some((prefix) => path.toLowerCase().startsWith(prefix))) return true;
+  return MEDIA_EXTENSION.test(path);
+}
 
 /**
  * Is a bare string (no slash, no scheme) plausibly an R2 media key?
@@ -116,7 +159,7 @@ function isR2Host(hostname) {
  * @returns {string} resolved URL, or '' when there is no image
  */
 export function resolveMediaUrl(input, env) {
-  const raw = toRawString(input);
+  const raw = extractMediaPath(input);
   if (!raw) return '';
   if (raw.startsWith('data:') || raw.startsWith('blob:')) return raw;
 
@@ -130,20 +173,23 @@ export function resolveMediaUrl(input, env) {
     try {
       url = new URL(raw.startsWith('//') ? `https:${raw}` : raw);
     } catch {
-      return raw;
+      return looksLikeImageRef(raw) ? raw : '';
     }
-    if (!isR2Host(url.hostname)) return url.href;
-    // The sync bot intermittently drops `tenants/<slug>/` from R2 URLs.
-    if (!url.pathname.startsWith(tenantPrefix)) {
-      const key = url.pathname.replace(/^\/+/, '');
-      url.pathname = `${tenantPrefix}${key}`;
+    if (!isR2Host(url.hostname)) {
+      return looksLikeImageRef(url.pathname) ? url.href : '';
+    }
+    const segments = url.pathname.split('/').filter(Boolean);
+    // Bucket-root or /media/<file> on the R2 host — objects live under tenants/<slug>/.
+    if (segments[0] !== 'tenants') {
+      const file = segments[0] === 'media' && segments[1] ? segments.slice(1).join('/') : segments.join('/');
+      url.pathname = `${tenantPrefix}${file}`;
     }
     url.pathname = encodePath(url.pathname);
     return url.href;
   }
 
-  // Payload media paths.
-  const mediaMatch = raw.match(/^\/?media\/(.+)$/i);
+  // Payload media paths (/media/x and /api/media/x).
+  const mediaMatch = raw.match(/^\/?(?:api\/)?media\/(.+)$/i);
   if (mediaMatch) {
     return `${base}${tenantPrefix}${encodePath(mediaMatch[1].replace(/^\/+/, ''))}`;
   }
