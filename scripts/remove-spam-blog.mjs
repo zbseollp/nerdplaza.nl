@@ -1,7 +1,8 @@
 #!/usr/bin/env node
 /**
- * Delete spam and WordPress placeholder posts from the blog directory.
- * Runs before every dev/build so a spam post synced from Payload never ships.
+ * Delete injected spam and WordPress placeholder posts from the blog directory.
+ * Runs before every dev/build. Editorial Payload posts (including casino/tech)
+ * must stay — only unambiguous junk is removed.
  */
 import { readFileSync, unlinkSync } from 'node:fs';
 import { relative } from 'node:path';

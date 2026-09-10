@@ -10,17 +10,18 @@
  * Only unambiguous injected spam and WordPress boilerplate are matched.
  */
 
-/** Casino / gambling affiliate spam — the dominant injection on this fleet. */
+/**
+ * Affiliate gambling landing pages (bonus / CRUKS / free-spins SEO).
+ * Editorial coverage of online casinos — e.g. "Technologie en online casino's
+ * in 2026" — is on-topic for this site and must not be deleted.
+ * Only slug + title are checked; a real article body will mention these words.
+ */
 const GAMBLING_PATTERNS = [
-  /\bonline\s+casino'?s?\b/i,
-  /\bcasino\s?(bonus|spelen|sites?|reviews?|zonder\s+cruks)\b/i,
-  /\bgokkast(en)?\b/i,
-  /\bgokken\s+(online|met\s+echt\s+geld)\b/i,
-  /\bcruks\b/i,
-  /\bbookmakers?\b/i,
-  /\bwedden\s+op\s+sport\b/i,
-  /\bfree\s?spins?\b/i,
-  /\bno\s?deposit\s+bonus\b/i,
+  /\bcasino[- ]bonus(?:sen)?\b/i,
+  /\bzonder[- ]cruks\b/i,
+  /\bno[- ]deposit[- ]bonus\b/i,
+  /\bfree[- ]spins?\b/i,
+  /\bwedden[- ]op[- ]sport\b/i,
 ];
 
 /** Pharma / adult spam. */
@@ -65,7 +66,7 @@ export function isWordPressBoilerplatePost(id = '', body = '', title = '') {
 export function isSpamBlogPost(id = '', body = '', title = '') {
   const slug = String(id).replace(/[-_/]+/g, ' ');
   if (matchesAny(INJECTION_PATTERNS, body)) return true;
-  if (matchesAny(GAMBLING_PATTERNS, slug, title, body)) return true;
+  if (matchesAny(GAMBLING_PATTERNS, slug, title)) return true;
   if (matchesAny(PHARMA_PATTERNS, slug, title, body)) return true;
   if (isWordPressBoilerplatePost(id, body, title)) return true;
   return false;
@@ -75,7 +76,7 @@ export function isSpamBlogPost(id = '', body = '', title = '') {
 export function spamReason(id = '', body = '', title = '') {
   const slug = String(id).replace(/[-_/]+/g, ' ');
   if (matchesAny(INJECTION_PATTERNS, body)) return 'script injection';
-  if (matchesAny(GAMBLING_PATTERNS, slug, title, body)) return 'gambling spam';
+  if (matchesAny(GAMBLING_PATTERNS, slug, title)) return 'gambling spam';
   if (matchesAny(PHARMA_PATTERNS, slug, title, body)) return 'pharma/adult spam';
   if (isWordPressBoilerplatePost(id, body, title)) return 'WordPress placeholder post';
   return '';
